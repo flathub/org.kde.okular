@@ -1,0 +1,200 @@
+id: org.kde.okular
+runtime: org.kde.Platform
+runtime-version: '5.11'
+sdk: org.kde.Sdk
+command: okular
+rename-icon: okular
+finish-args:
+  - --share=ipc
+  - --socket=x11
+  - --socket=wayland
+  - --device=dri
+cleanup:
+  - /include
+  - /lib/pkgconfig
+  - /lib/*.a
+  - /lib/*.la
+  - /share/man
+modules:
+  - name: boost
+    buildsystem: simple
+    build-commands:
+      - ./bootstrap.sh --prefix=/app --with-libraries=system
+      - ./b2 -j $FLATPAK_BUILDER_N_JOBS install
+    sources:
+      - type: archive
+        url: https://dl.bintray.com/boostorg/release/1.68.0/source/boost_1_68_0.tar.bz2
+        sha256: 7f6130bc3cf65f56a618888ce9d5ea704fa10b462be126ad053e80e553d6d8b7
+
+  - name: libzip
+    buildsystem: cmake-ninja
+    builddir: true
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
+    sources:
+      - type: archive
+        url: https://libzip.org/download/libzip-1.5.1.tar.xz
+        sha256: 04ea35b6956c7b3453f1ed3f3fe40e3ddae1f43931089124579e8384e79ed372
+
+  - name: chmlib
+    rm-configure: true
+    sources:
+      - type: script
+        dest-filename: autogen.sh
+        commands:
+          - AUTOMAKE="automake --foreign" autoreconf -vfi
+      - type: archive
+        url: http://www.jedrea.com/chmlib/chmlib-0.40.tar.bz2
+        sha256: 3449d64b0cf71578b2c7e3ddc048d4af3661f44a83941ea074a7813f3a59ffa3
+      - type: patch
+        path: chmlib-arm.patch
+
+  - name: ebook-tools
+    buildsystem: cmake-ninja
+    builddir: true
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
+    sources:
+      - type: archive
+        url: https://downloads.sourceforge.net/project/ebook-tools/ebook-tools/0.2.2/ebook-tools-0.2.2.tar.gz
+        sha256: cbc35996e911144fa62925366ad6a6212d6af2588f1e39075954973bbee627ae
+
+  - name: ghostscript
+    config-opts:
+      - --disable-cups
+    make-args:
+      - so
+    make-install-args:
+      - soinstall
+    cleanup:
+      - /bin
+      - /share/ghostscript/9.20/doc/
+      - /share/ghostscript/9.20/examples
+    sources:
+    - type: archive
+      url: https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs920/ghostscript-9.20.tar.xz
+      sha256: 3c0f3dc5df6f784850fa4ce7dcc3d6c56ef543af1fbaedd1d9f8d9f8b66de0ab
+    - type: shell
+      commands:
+        - cp -p /usr/share/automake-*/config.{sub,guess} freetype/builds/unix/
+        - cp -p /usr/share/automake-*/config.{sub,guess} ijs/
+        - cp -p /usr/share/automake-*/config.{sub,guess} jpeg/
+        - cp -p /usr/share/automake-*/config.{sub,guess} libpng/
+        - cp -p /usr/share/automake-*/config.{sub,guess} lcms2/
+        - cp -p /usr/share/automake-*/config.{sub,guess} tiff/config/
+        - rm -rf libpng/pngread.c
+
+  - name: libspectre
+    sources:
+      - type: archive
+        url: http://libspectre.freedesktop.org/releases/libspectre-0.2.8.tar.gz
+        sha256: 65256af389823bbc4ee4d25bfd1cc19023ffc29ae9f9677f2d200fa6e98bc7a8
+
+  - name: openjpeg
+    buildsystem: cmake-ninja
+    builddir: true
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
+    cleanup:
+      - /bin
+      - /lib/openjpeg-*
+    sources:
+      - type: archive
+        url: https://github.com/uclouvain/openjpeg/archive/v2.3.0.tar.gz
+        sha256: 3dc787c1bb6023ba846c2a0d9b1f6e179f1cd255172bde9eb75b01f1e6c7d71a
+
+  - name: poppler-data
+    buildsystem: cmake-ninja
+    builddir: true
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
+    sources:
+      - type: archive
+        url: https://poppler.freedesktop.org/poppler-data-0.4.9.tar.gz
+        sha256: 1f9c7e7de9ecd0db6ab287349e31bf815ca108a5a175cf906a90163bdbe32012
+
+  - name: poppler
+    buildsystem: cmake-ninja
+    builddir: true
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
+      - -DBUILD_GTK_TESTS=OFF
+      - -DBUILD_QT5_TESTS=OFF
+      - -DBUILD_CPP_TESTS=OFF
+      - -DENABLE_UTILS=OFF
+      - -DENABLE_CPP=OFF
+      - -DENABLE_GLIB=OFF
+    sources:
+      - type: archive
+        url: https://poppler.freedesktop.org/poppler-0.68.0.tar.xz
+        sha256: f90d04f0fb8df6923ecb0f106ae866cf9f8761bb537ddac64dfb5322763d0e58
+
+  - name: exiv2
+    buildsystem: cmake-ninja
+    builddir: true
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
+    sources:
+      - type: archive
+        url: http://www.exiv2.org/builds/exiv2-0.26-trunk.tar.gz
+        sha256: c75e3c4a0811bf700d92c82319373b7a825a2331c12b8b37d41eb58e4f18eafb
+
+  - name: kjs
+    buildsystem: cmake-ninja
+    builddir: true
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
+    sources:
+    - type: archive
+      url: https://download.kde.org/stable/frameworks/5.48/portingAids/kjs-5.48.0.tar.xz
+      sha256: 8406f62fb04ce503978513ebc074a2f5e803f5b3e59eccb98f82b361aa714b7b
+
+  - name: khtml
+    buildsystem: cmake-ninja
+    builddir: true
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
+    sources:
+      - type: archive
+        url: https://download.kde.org/stable/frameworks/5.48/portingAids/khtml-5.48.0.tar.xz
+        sha256: a1923402f04f4a72e8688004a00e47fe79f7f72d703d53a14058eebdb7a531ff
+
+  - name: kactivities
+    buildsystem: cmake-ninja
+    builddir: true
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
+    sources:
+      - type: archive
+        url: https://download.kde.org/stable/frameworks/5.48/kactivities-5.48.0.tar.xz
+        sha256: e87ba05b07fa484b617b1fc48997de9dcf921c8c0e877d1a827010893effadff
+
+  - name: libkexiv2
+    buildsystem: cmake-ninja
+    builddir: true
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
+    sources:
+    - type: archive
+      url: https://download.kde.org/stable/applications/18.08.0/src/libkexiv2-18.08.0.tar.xz
+      sha256: 4d4171c3da949c7a0c6109f32f156237ccaff52cdb8bef2da9a96e2a1a2fb031
+
+  - name: kdegraphics-mobipocket
+    buildsystem: cmake-ninja
+    builddir: true
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
+    sources:
+    - type: archive
+      url: https://download.kde.org/stable/applications/18.08.0/src/kdegraphics-mobipocket-18.08.0.tar.xz
+      sha256: eab8e791606580e5ee369ab27b459f46e7d0a6589e3ca2efb27861114c646b5c
+
+  - name: okular
+    buildsystem: cmake-ninja
+    builddir: true
+    config-opts:
+      - -DCMAKE_BUILD_TYPE=RelWithDebInfo
+    sources:
+      - type: archive
+        url: https://download.kde.org/stable/applications/18.08.0/src/okular-18.08.0.tar.xz
+        sha256: f6a27b9b2707358dfed713458ed52cb1ac7dbc48ce3c06bfe04dd0b036809c87
