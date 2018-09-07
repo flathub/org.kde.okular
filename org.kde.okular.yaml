@@ -187,8 +187,8 @@ modules:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     sources:
     - type: archive
-      url: https://download.kde.org/stable/applications/18.08.0/src/libkexiv2-18.08.0.tar.xz
-      sha256: 4d4171c3da949c7a0c6109f32f156237ccaff52cdb8bef2da9a96e2a1a2fb031
+      url: https://download.kde.org/stable/applications/18.08.1/src/libkexiv2-18.08.1.tar.xz
+      sha256: 94c8f55b2f3a4e816087c24563301e0e1a4550ff13dcd7275a7a5e098d300f6c
 
   - name: kdegraphics-mobipocket
     buildsystem: cmake-ninja
@@ -197,8 +197,8 @@ modules:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     sources:
     - type: archive
-      url: https://download.kde.org/stable/applications/18.08.0/src/kdegraphics-mobipocket-18.08.0.tar.xz
-      sha256: eab8e791606580e5ee369ab27b459f46e7d0a6589e3ca2efb27861114c646b5c
+      url: https://download.kde.org/stable/applications/18.08.1/src/kdegraphics-mobipocket-18.08.1.tar.xz
+      sha256: f69fa0dd72b584533dc0bc60625b44a154d3b40d118afcda3724313eec135c8e
 
   - name: okular
     buildsystem: cmake-ninja
@@ -207,5 +207,5 @@ modules:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     sources:
       - type: archive
-        url: https://download.kde.org/stable/applications/18.08.0/src/okular-18.08.0.tar.xz
-        sha256: f6a27b9b2707358dfed713458ed52cb1ac7dbc48ce3c06bfe04dd0b036809c87
+        url: https://download.kde.org/stable/applications/18.08.1/src/okular-18.08.1.tar.xz
+        sha256: 536aa48e324bbfc6eb8c13988179ab50e43ecd4b66e7a59ce098e438d428c0c6
