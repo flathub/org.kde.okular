@@ -79,8 +79,8 @@ modules:
       - soinstall
     cleanup:
       - /bin
-      - /share/ghostscript/9.24/doc/
-      - /share/ghostscript/9.24/examples
+      - /share/ghostscript/9.25/doc/
+      - /share/ghostscript/9.25/examples
     sources:
     - type: archive
       url: https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs925/ghostscript-9.25.tar.xz
