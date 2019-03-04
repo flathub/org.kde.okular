@@ -1,6 +1,6 @@
 id: org.kde.okular
 runtime: org.kde.Platform
-runtime-version: '5.11'
+runtime-version: '5.12'
 sdk: org.kde.Sdk
 command: okular
 rename-icon: okular
@@ -17,6 +17,7 @@ cleanup:
   - /lib/*.la
   - /share/man
 modules:
+
   - name: discount
     buildsystem: simple
     build-commands:
@@ -35,8 +36,8 @@ modules:
       - ./b2 -j $FLATPAK_BUILDER_N_JOBS install
     sources:
       - type: archive
-        url: https://dl.bintray.com/boostorg/release/1.68.0/source/boost_1_68_0.tar.bz2
-        sha256: 7f6130bc3cf65f56a618888ce9d5ea704fa10b462be126ad053e80e553d6d8b7
+        url: https://dl.bintray.com/boostorg/release/1.69.0/source/boost_1_69_0.tar.bz2
+        sha256: 8f32d4617390d1c2d16f26a27ab60d97807b35440d45891fa340fc2648b04406
 
   - name: libzip
     buildsystem: cmake-ninja
@@ -83,18 +84,18 @@ modules:
       - /share/ghostscript/9.26/doc/
       - /share/ghostscript/9.26/examples
     sources:
-    - type: archive
-      url: https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs926/ghostscript-9.26.tar.xz
-      sha256: 90ed475f37584f646e9ef829932b2525d5c6fc2e0147e8d611bc50aa0e718598
-    - type: shell
-      commands:
-        - cp -p /usr/share/automake-*/config.{sub,guess} freetype/builds/unix/
-        - cp -p /usr/share/automake-*/config.{sub,guess} ijs/
-        - cp -p /usr/share/automake-*/config.{sub,guess} jpeg/
-        - cp -p /usr/share/automake-*/config.{sub,guess} libpng/
-        - cp -p /usr/share/automake-*/config.{sub,guess} lcms2mt/
-        - cp -p /usr/share/automake-*/config.{sub,guess} tiff/config/
-        - rm -rf libpng/pngread.c
+      - type: archive
+        url: https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs926/ghostscript-9.26.tar.xz
+        sha256: 90ed475f37584f646e9ef829932b2525d5c6fc2e0147e8d611bc50aa0e718598
+      - type: shell
+        commands:
+          - cp -p /usr/share/automake-*/config.{sub,guess} freetype/builds/unix/
+          - cp -p /usr/share/automake-*/config.{sub,guess} ijs/
+          - cp -p /usr/share/automake-*/config.{sub,guess} jpeg/
+          - cp -p /usr/share/automake-*/config.{sub,guess} libpng/
+          - cp -p /usr/share/automake-*/config.{sub,guess} lcms2mt/
+          - cp -p /usr/share/automake-*/config.{sub,guess} tiff/config/
+          - rm -rf libpng/pngread.c
 
   - name: libspectre
     sources:
@@ -138,8 +139,8 @@ modules:
       - -DENABLE_GLIB=OFF
     sources:
       - type: archive
-        url: https://poppler.freedesktop.org/poppler-0.72.0.tar.xz
-        sha256: c1747eb8f26e9e753c4001ed951db2896edc1021b6d0f547a0bd2a27c30ada51
+        url: https://poppler.freedesktop.org/poppler-0.74.0.tar.xz
+        sha256: 92e09fd3302567fd36146b36bb707db43ce436e8841219025a82ea9fb0076b2f
 
   - name: exiv2
     buildsystem: cmake-ninja
@@ -148,8 +149,8 @@ modules:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     sources:
       - type: archive
-        url: http://www.exiv2.org/builds/exiv2-0.26-trunk.tar.gz
-        sha256: c75e3c4a0811bf700d92c82319373b7a825a2331c12b8b37d41eb58e4f18eafb
+        url: http://exiv2.dyndns.org/builds/exiv2-0.27.0a-Source.tar.gz
+        sha256: a4adfa7aaf295b0383adead476f8e0493b9d6c6c7570d5884d2ebf8a2871902f
 
   - name: kjs
     buildsystem: cmake-ninja
@@ -157,9 +158,9 @@ modules:
     config-opts:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     sources:
-    - type: archive
-      url: https://download.kde.org/stable/frameworks/5.53/portingAids/kjs-5.53.0.tar.xz
-      sha256: 89111e457c06af13f3c904eca4458e6cb8e4bab051ae29504c02b5ea7c3f2cca
+      - type: archive
+        url: https://download.kde.org/stable/frameworks/5.55/portingAids/kjs-5.55.0.tar.xz
+        sha256: 0c9c9bf3e91a416f2dc5f651ed77efe9e9c445e0574af60fdf121cfb74f73c30
 
   - name: khtml
     buildsystem: cmake-ninja
@@ -168,8 +169,8 @@ modules:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     sources:
       - type: archive
-        url: https://download.kde.org/stable/frameworks/5.53/portingAids/khtml-5.53.0.tar.xz
-        sha256: de85b04cd71357ced676c2e15643c8a65cc29b3eef5983c3308b7c9126be951d
+        url: https://download.kde.org/stable/frameworks/5.55/portingAids/khtml-5.55.0.tar.xz
+        sha256: 7885169137cd2bb0b6e616a08e4a1b687b27873907b3a3050b4e3d507bf90972
 
   - name: kactivities
     buildsystem: cmake-ninja
@@ -178,8 +179,8 @@ modules:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     sources:
       - type: archive
-        url: https://download.kde.org/stable/frameworks/5.53/kactivities-5.53.0.tar.xz
-        sha256: c62d6453bd4dcbac296b80dc092fc8c5225661d27f7c11b2bc33791223824ede
+        url: https://download.kde.org/stable/frameworks/5.55/kactivities-5.55.0.tar.xz
+        sha256: 6fa9eaddd1d963158edd0be7fea3986be8308ec28e80cf3e57d6256a45dfe936
 
   - name: libkexiv2
     buildsystem: cmake-ninja
@@ -187,9 +188,11 @@ modules:
     config-opts:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     sources:
-    - type: archive
-      url: https://download.kde.org/stable/applications/18.12.0/src/libkexiv2-18.12.0.tar.xz
-      sha256: 0a862feb9d9238f1b8b8a6c95d2ee7744145605239bfba024376021323eb77f4
+      - type: archive
+        url: https://download.kde.org/stable/applications/18.12.2/src/libkexiv2-18.12.2.tar.xz
+        sha256: c94af99abc9fd47300576bf5677ff3b51cf174dfb9a2cba6963188c71ce568c9
+      - type: patch
+        path: libkexiv2-exiv2-0.27.patch
 
   - name: kdegraphics-mobipocket
     buildsystem: cmake-ninja
@@ -197,9 +200,9 @@ modules:
     config-opts:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     sources:
-    - type: archive
-      url: https://download.kde.org/stable/applications/18.12.0/src/kdegraphics-mobipocket-18.12.0.tar.xz
-      sha256: 51eaffea48cd637dca26a8b9ac31cc8164a2954004dccd58353a5c42f3b2fd15
+      - type: archive
+        url: https://download.kde.org/stable/applications/18.12.2/src/kdegraphics-mobipocket-18.12.2.tar.xz
+        sha256: 58233f44db9ab0b7f6233aced377d55f5101459b92a7e153a8ca055e75fe0c41
 
   - name: okular
     buildsystem: cmake-ninja
@@ -208,5 +211,5 @@ modules:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     sources:
       - type: archive
-        url: https://download.kde.org/stable/applications/18.12.0/src/okular-18.12.0.tar.xz
-        sha256: 915643d16b26c352cfa8461647a08701b50b7802c7e628ff303d74af313599a0
+        url: https://download.kde.org/stable/applications/18.12.2/src/okular-18.12.2.tar.xz
+        sha256: dbf7eed57536fee44a8c872dba08764759c8ef59c63ac4abd970e60155612d7f
