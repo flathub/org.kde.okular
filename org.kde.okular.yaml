@@ -72,6 +72,12 @@ modules:
         url: https://downloads.sourceforge.net/project/ebook-tools/ebook-tools/0.2.2/ebook-tools-0.2.2.tar.gz
         sha256: cbc35996e911144fa62925366ad6a6212d6af2588f1e39075954973bbee627ae
 
+  - name: djvulibre
+    sources:
+      - type: archive
+        url: http://downloads.sourceforge.net/djvu/djvulibre-3.5.27.tar.gz
+        sha256: e69668252565603875fb88500cde02bf93d12d48a3884e472696c896e81f505f
+
   - name: ghostscript
     config-opts:
       - --disable-cups
@@ -159,8 +165,8 @@ modules:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     sources:
       - type: archive
-        url: https://download.kde.org/stable/frameworks/5.55/portingAids/kjs-5.55.0.tar.xz
-        sha256: 0c9c9bf3e91a416f2dc5f651ed77efe9e9c445e0574af60fdf121cfb74f73c30
+        url: https://download.kde.org/stable/frameworks/5.56/portingAids/kjs-5.56.0.tar.xz
+        sha256: 963e452ff3aa18ddc858fbfdcf234bdc97576b9496b871f742d90177a33974ac
 
   - name: khtml
     buildsystem: cmake-ninja
@@ -169,8 +175,8 @@ modules:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     sources:
       - type: archive
-        url: https://download.kde.org/stable/frameworks/5.55/portingAids/khtml-5.55.0.tar.xz
-        sha256: 7885169137cd2bb0b6e616a08e4a1b687b27873907b3a3050b4e3d507bf90972
+        url: https://download.kde.org/stable/frameworks/5.56/portingAids/khtml-5.56.0.tar.xz
+        sha256: 7d381c2a7d15710b4ba404111135c1aadbd3fc8027ad77f153b81a5208c3acf2
 
   - name: kactivities
     buildsystem: cmake-ninja
@@ -179,8 +185,8 @@ modules:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     sources:
       - type: archive
-        url: https://download.kde.org/stable/frameworks/5.55/kactivities-5.55.0.tar.xz
-        sha256: 6fa9eaddd1d963158edd0be7fea3986be8308ec28e80cf3e57d6256a45dfe936
+        url: https://download.kde.org/stable/frameworks/5.56/kactivities-5.56.0.tar.xz
+        sha256: e76a4d44ca6e7ce2273d8c3b133fdd12e32367aeffd66098ec46e7b28c491750
 
   - name: libkexiv2
     buildsystem: cmake-ninja
@@ -189,8 +195,8 @@ modules:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     sources:
       - type: archive
-        url: https://download.kde.org/stable/applications/18.12.2/src/libkexiv2-18.12.2.tar.xz
-        sha256: c94af99abc9fd47300576bf5677ff3b51cf174dfb9a2cba6963188c71ce568c9
+        url: https://download.kde.org/stable/applications/18.12.3/src/libkexiv2-18.12.3.tar.xz
+        sha256: 1d14ff63af42ab7e19e2039648a95ea5dc946afbe3e3df52c17ce1618a02ebdc
       - type: patch
         path: libkexiv2-exiv2-0.27.patch
 
@@ -201,8 +207,8 @@ modules:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     sources:
       - type: archive
-        url: https://download.kde.org/stable/applications/18.12.2/src/kdegraphics-mobipocket-18.12.2.tar.xz
-        sha256: 58233f44db9ab0b7f6233aced377d55f5101459b92a7e153a8ca055e75fe0c41
+        url: https://download.kde.org/stable/applications/18.12.3/src/kdegraphics-mobipocket-18.12.3.tar.xz
+        sha256: 69ae8b6f45b8c9ec3a73e636f7a779257ebbd6f8016d24294bec844a51f2cc52
 
   - name: okular
     buildsystem: cmake-ninja
@@ -211,5 +217,5 @@ modules:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     sources:
       - type: archive
-        url: https://download.kde.org/stable/applications/18.12.2/src/okular-18.12.2.tar.xz
-        sha256: dbf7eed57536fee44a8c872dba08764759c8ef59c63ac4abd970e60155612d7f
+        url: https://download.kde.org/stable/applications/18.12.3/src/okular-18.12.3.tar.xz
+        sha256: d7ef9b59acb5746ebc64399f4c1a99faf0c1530bf6a818b3bfd34b73476d90ab
