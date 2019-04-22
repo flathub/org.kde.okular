@@ -46,8 +46,8 @@ modules:
       - -DCMAKE_BUILD_TYPE=RelWithDebInfo
     sources:
       - type: archive
-        url: https://libzip.org/download/libzip-1.5.1.tar.xz
-        sha256: 04ea35b6956c7b3453f1ed3f3fe40e3ddae1f43931089124579e8384e79ed372
+        url: https://libzip.org/download/libzip-1.5.2.tar.xz
+        sha256: b3de4d4bd49a01e0cab3507fc163f88e1651695b6b9cb25ad174dbe319d4a3b4
 
   - name: chmlib
     rm-configure: true
@@ -87,12 +87,12 @@ modules:
       - soinstall
     cleanup:
       - /bin
-      - /share/ghostscript/9.26/doc/
-      - /share/ghostscript/9.26/examples
+      - /share/ghostscript/9.27/doc/
+      - /share/ghostscript/9.27/examples
     sources:
       - type: archive
-        url: https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs926/ghostscript-9.26.tar.xz
-        sha256: 90ed475f37584f646e9ef829932b2525d5c6fc2e0147e8d611bc50aa0e718598
+        url: https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs927/ghostscript-9.27.tar.xz
+        sha256: fc0f1fbacd3610c67a9f080487a0e021f14390c38a4b4df9723e2bdf2b90b619
       - type: shell
         commands:
           - cp -p /usr/share/automake-*/config.{sub,guess} freetype/builds/unix/
@@ -119,8 +119,8 @@ modules:
       - /lib/openjpeg-*
     sources:
       - type: archive
-        url: https://github.com/uclouvain/openjpeg/archive/v2.3.0.tar.gz
-        sha256: 3dc787c1bb6023ba846c2a0d9b1f6e179f1cd255172bde9eb75b01f1e6c7d71a
+        url: https://github.com/uclouvain/openjpeg/archive/v2.3.1.tar.gz
+        sha256: 63f5a4713ecafc86de51bfad89cc07bb788e9bba24ebbf0c4ca637621aadb6a9
 
   - name: poppler-data
     buildsystem: cmake-ninja
@@ -145,8 +145,8 @@ modules:
       - -DENABLE_GLIB=OFF
     sources:
       - type: archive
-        url: https://poppler.freedesktop.org/poppler-0.74.0.tar.xz
-        sha256: 92e09fd3302567fd36146b36bb707db43ce436e8841219025a82ea9fb0076b2f
+        url: https://poppler.freedesktop.org/poppler-0.76.0.tar.xz
+        sha256: 370f5fcfe2bbf0c76fc394d338cd72ed7f2044b67f4eb4b115eb074ccfc70d63
 
   - name: exiv2
     buildsystem: cmake-ninja
