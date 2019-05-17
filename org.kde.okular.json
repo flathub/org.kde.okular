@@ -1,0 +1,308 @@
+{
+   "id": "org.kde.okular",
+   "runtime": "org.kde.Platform",
+   "runtime-version": "5.12",
+   "sdk": "org.kde.Sdk",
+   "command": "okular",
+   "rename-icon": "okular",
+   "finish-args": [
+      "--share=ipc",
+      "--socket=x11",
+      "--socket=wayland",
+      "--device=dri",
+      "--filesystem=xdg-config/kdeglobals:ro"
+   ],
+   "cleanup": [
+      "/include",
+      "/lib/pkgconfig",
+      "/lib/*.a",
+      "/lib/*.la",
+      "/share/man"
+   ],
+   "modules": [
+      {
+         "name": "discount",
+         "buildsystem": "simple",
+         "build-commands": [
+            "./configure.sh --prefix=/app --enable-all-features --with-fenced-code --shared",
+            "sed -e 's|/sbin/ldconfig|/sbin/ldconfig -n|' -i librarian.sh",
+            "make install"
+         ],
+         "sources": [
+            {
+               "type": "archive",
+               "url": "http://www.pell.portland.or.us/~orc/Code/discount/discount-2.2.4.tar.bz2",
+               "sha256": "74fd1e3cc2b4eacf7325d3fd89df38b589db60d5dd0f4f14a0115f7da5e230a5"
+            }
+         ]
+      },
+      {
+         "name": "boost",
+         "buildsystem": "simple",
+         "build-commands": [
+            "./bootstrap.sh --prefix=/app --with-libraries=system",
+            "./b2 -j $FLATPAK_BUILDER_N_JOBS install"
+         ],
+         "sources": [
+            {
+               "type": "archive",
+               "url": "https://dl.bintray.com/boostorg/release/1.69.0/source/boost_1_69_0.tar.bz2",
+               "sha256": "8f32d4617390d1c2d16f26a27ab60d97807b35440d45891fa340fc2648b04406"
+            }
+         ]
+      },
+      {
+         "name": "libzip",
+         "buildsystem": "cmake-ninja",
+         "builddir": true,
+         "config-opts": [
+            "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+         ],
+         "sources": [
+            {
+               "type": "archive",
+               "url": "https://libzip.org/download/libzip-1.5.2.tar.xz",
+               "sha256": "b3de4d4bd49a01e0cab3507fc163f88e1651695b6b9cb25ad174dbe319d4a3b4"
+            }
+         ]
+      },
+      {
+         "name": "chmlib",
+         "rm-configure": true,
+         "sources": [
+            {
+               "type": "script",
+               "dest-filename": "autogen.sh",
+               "commands": [
+                  "AUTOMAKE=\"automake --foreign\" autoreconf -vfi"
+               ]
+            },
+            {
+               "type": "archive",
+               "url": "http://www.jedrea.com/chmlib/chmlib-0.40.tar.bz2",
+               "sha256": "3449d64b0cf71578b2c7e3ddc048d4af3661f44a83941ea074a7813f3a59ffa3"
+            },
+            {
+               "type": "patch",
+               "path": "chmlib-arm.patch"
+            }
+         ]
+      },
+      {
+         "name": "ebook-tools",
+         "buildsystem": "cmake-ninja",
+         "builddir": true,
+         "config-opts": [
+            "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+         ],
+         "sources": [
+            {
+               "type": "archive",
+               "url": "https://downloads.sourceforge.net/project/ebook-tools/ebook-tools/0.2.2/ebook-tools-0.2.2.tar.gz",
+               "sha256": "cbc35996e911144fa62925366ad6a6212d6af2588f1e39075954973bbee627ae"
+            }
+         ]
+      },
+      {
+         "name": "djvulibre",
+         "sources": [
+            {
+               "type": "archive",
+               "url": "http://downloads.sourceforge.net/djvu/djvulibre-3.5.27.tar.gz",
+               "sha256": "e69668252565603875fb88500cde02bf93d12d48a3884e472696c896e81f505f"
+            }
+         ]
+      },
+      {
+         "name": "ghostscript",
+         "config-opts": [
+            "--disable-cups"
+         ],
+         "make-args": [
+            "so"
+         ],
+         "make-install-args": [
+            "soinstall"
+         ],
+         "cleanup": [
+            "/bin",
+            "/share/ghostscript/9.27/doc/",
+            "/share/ghostscript/9.27/examples"
+         ],
+         "sources": [
+            {
+               "type": "archive",
+               "url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs927/ghostscript-9.27.tar.xz",
+               "sha256": "fc0f1fbacd3610c67a9f080487a0e021f14390c38a4b4df9723e2bdf2b90b619"
+            },
+            {
+               "type": "shell",
+               "commands": [
+                  "cp -p /usr/share/automake-*/config.{sub,guess} freetype/builds/unix/",
+                  "cp -p /usr/share/automake-*/config.{sub,guess} ijs/",
+                  "cp -p /usr/share/automake-*/config.{sub,guess} jpeg/",
+                  "cp -p /usr/share/automake-*/config.{sub,guess} libpng/",
+                  "cp -p /usr/share/automake-*/config.{sub,guess} lcms2mt/",
+                  "cp -p /usr/share/automake-*/config.{sub,guess} tiff/config/",
+                  "rm -rf libpng/pngread.c"
+               ]
+            }
+         ]
+      },
+      {
+         "name": "libspectre",
+         "sources": [
+            {
+               "type": "archive",
+               "url": "http://libspectre.freedesktop.org/releases/libspectre-0.2.8.tar.gz",
+               "sha256": "65256af389823bbc4ee4d25bfd1cc19023ffc29ae9f9677f2d200fa6e98bc7a8"
+            }
+         ]
+      },
+      {
+         "name": "openjpeg",
+         "buildsystem": "cmake-ninja",
+         "builddir": true,
+         "config-opts": [
+            "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+         ],
+         "cleanup": [
+            "/bin",
+            "/lib/openjpeg-*"
+         ],
+         "sources": [
+            {
+               "type": "archive",
+               "url": "https://github.com/uclouvain/openjpeg/archive/v2.3.1.tar.gz",
+               "sha256": "63f5a4713ecafc86de51bfad89cc07bb788e9bba24ebbf0c4ca637621aadb6a9"
+            }
+         ]
+      },
+      {
+         "name": "poppler-data",
+         "buildsystem": "cmake-ninja",
+         "builddir": true,
+         "config-opts": [
+            "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+         ],
+         "sources": [
+            {
+               "type": "archive",
+               "url": "https://poppler.freedesktop.org/poppler-data-0.4.9.tar.gz",
+               "sha256": "1f9c7e7de9ecd0db6ab287349e31bf815ca108a5a175cf906a90163bdbe32012"
+            }
+         ]
+      },
+      {
+         "name": "poppler",
+         "buildsystem": "cmake-ninja",
+         "builddir": true,
+         "config-opts": [
+            "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
+            "-DBUILD_GTK_TESTS=OFF",
+            "-DBUILD_QT5_TESTS=OFF",
+            "-DBUILD_CPP_TESTS=OFF",
+            "-DENABLE_UTILS=OFF",
+            "-DENABLE_CPP=OFF",
+            "-DENABLE_GLIB=OFF"
+         ],
+         "sources": [
+            {
+               "type": "archive",
+               "url": "https://poppler.freedesktop.org/poppler-0.76.1.tar.xz",
+               "sha256": "e62cd4053f851eecc4a6aa2b81d739fbab1d67b3c60b31ebac7049483cc617b1"
+            }
+         ]
+      },
+      {
+         "name": "exiv2",
+         "buildsystem": "cmake-ninja",
+         "builddir": true,
+         "config-opts": [
+            "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+         ],
+         "sources": [
+            {
+               "type": "archive",
+               "url": "http://exiv2.dyndns.org/builds/exiv2-0.27.0a-Source.tar.gz",
+               "sha256": "a4adfa7aaf295b0383adead476f8e0493b9d6c6c7570d5884d2ebf8a2871902f"
+            }
+         ]
+      },
+      {
+         "name": "kjs",
+         "buildsystem": "cmake-ninja",
+         "builddir": true,
+         "config-opts": [
+            "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+         ],
+         "sources": [
+            {
+               "type": "archive",
+               "url": "https://download.kde.org/stable/frameworks/5.56/portingAids/kjs-5.56.0.tar.xz",
+               "sha256": "963e452ff3aa18ddc858fbfdcf234bdc97576b9496b871f742d90177a33974ac"
+            }
+         ]
+      },
+      {
+         "name": "khtml",
+         "buildsystem": "cmake-ninja",
+         "builddir": true,
+         "config-opts": [
+            "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+         ],
+         "sources": [
+            {
+               "type": "archive",
+               "url": "https://download.kde.org/stable/frameworks/5.56/portingAids/khtml-5.56.0.tar.xz",
+               "sha256": "7d381c2a7d15710b4ba404111135c1aadbd3fc8027ad77f153b81a5208c3acf2"
+            }
+         ]
+      },
+      {
+         "name": "libkexiv2",
+         "buildsystem": "cmake-ninja",
+         "builddir": true,
+         "config-opts": [
+            "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+         ],
+         "sources": [
+            {
+               "type": "archive",
+               "url": "https://download.kde.org/stable/applications/19.04.1/src/libkexiv2-19.04.1.tar.xz",
+               "sha256": "138e1bf75cbbf16c46b6ba35f25e700ad93fa8a2134d0ad4c344174c7701cbae"
+            }
+         ]
+      },
+      {
+         "name": "kdegraphics-mobipocket",
+         "buildsystem": "cmake-ninja",
+         "builddir": true,
+         "config-opts": [
+            "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+         ],
+         "sources": [
+            {
+               "type": "archive",
+               "url": "https://download.kde.org/stable/applications/19.04.1/src/kdegraphics-mobipocket-19.04.1.tar.xz",
+               "sha256": "345be42b0fb4f2040ce1430c872c0d20b0abaa266159a19beac1b067b2723821"
+            }
+         ]
+      },
+      {
+         "name": "okular",
+         "buildsystem": "cmake-ninja",
+         "builddir": true,
+         "config-opts": [
+            "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+         ],
+         "sources": [
+            {
+               "type": "archive",
+               "url": "https://download.kde.org/stable/applications/19.04.1/src/okular-19.04.1.tar.xz",
+               "sha256": "7145b1eea61c56a5b413e960e5b24038c7af5d3cb583a524deca344dae3a0e0e"
+            }
+         ]
+      }
+   ]
+}
