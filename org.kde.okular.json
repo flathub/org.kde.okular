@@ -210,8 +210,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://poppler.freedesktop.org/poppler-0.76.1.tar.xz",
-               "sha256": "e62cd4053f851eecc4a6aa2b81d739fbab1d67b3c60b31ebac7049483cc617b1"
+               "url": "https://poppler.freedesktop.org/poppler-0.79.0.tar.xz",
+               "sha256": "f985a4608fe592d2546d9d37d4182e502ff6b4c42f8db4be0a021a1c369528c8"
             }
          ]
       },
@@ -225,8 +225,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "http://exiv2.dyndns.org/builds/exiv2-0.27.0a-Source.tar.gz",
-               "sha256": "a4adfa7aaf295b0383adead476f8e0493b9d6c6c7570d5884d2ebf8a2871902f"
+               "url": "https://www.exiv2.org/builds/exiv2-0.27.2-Source.tar.gz",
+               "sha256": "2652f56b912711327baff6dc0c90960818211cf7ab79bb5e1eb59320b78d153f"
             }
          ]
       },
@@ -240,8 +240,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://download.kde.org/stable/frameworks/5.56/portingAids/kjs-5.56.0.tar.xz",
-               "sha256": "963e452ff3aa18ddc858fbfdcf234bdc97576b9496b871f742d90177a33974ac"
+               "url": "https://download.kde.org/stable/frameworks/5.60/portingAids/kjs-5.60.0.tar.xz",
+               "sha256": "9f4beaf9d773afbd73de5a9adf1f481c9b95fb02cc7cfe8ec050625c13811355"
             }
          ]
       },
@@ -255,8 +255,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://download.kde.org/stable/frameworks/5.56/portingAids/khtml-5.56.0.tar.xz",
-               "sha256": "7d381c2a7d15710b4ba404111135c1aadbd3fc8027ad77f153b81a5208c3acf2"
+               "url": "https://download.kde.org/stable/frameworks/5.60/portingAids/khtml-5.60.0.tar.xz",
+               "sha256": "c18a5fa51cbf9f9a0a0f104e2fc0581abdb99a5bd36f8426ef129ea848414037"
             }
          ]
       },
@@ -270,8 +270,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://download.kde.org/stable/applications/19.04.2/src/libkexiv2-19.04.2.tar.xz",
-               "sha256": "905b419403bc7db465586cf423f66b66d7737e59e19d5f554d4250497ddd395a"
+               "url": "https://download.kde.org/stable/applications/19.08.0/src/libkexiv2-19.08.0.tar.xz",
+               "sha256": "42bb1a8b69efbb4ab8b1d939279d3eb02b2d8030bcb917739f4f61fb5a10db15"
             }
          ]
       },
@@ -285,8 +285,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://download.kde.org/stable/applications/19.04.2/src/kdegraphics-mobipocket-19.04.2.tar.xz",
-               "sha256": "ac4b486a6e8e015621e5101433f956bc08742e4e85c3179fffba17543bcda6b1"
+               "url": "https://download.kde.org/stable/applications/19.08.0/src/kdegraphics-mobipocket-19.08.0.tar.xz",
+               "sha256": "28c6566f32855a43d10829070cc47d0f4c879ca89eb3228ea6274d0f32fa90fe"
             }
          ]
       },
@@ -300,9 +300,15 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://download.kde.org/stable/applications/19.04.2/src/okular-19.04.2.tar.xz",
-               "sha256": "75569d1d14a4fb061c8ab6a692b9cede1bccbab7c2fe65271894aa2f87826bc1"
-            }
+               "url": "https://download.kde.org/stable/applications/19.08.0/src/okular-19.08.0.tar.xz",
+               "sha256": "721a0d02d5ff9277c4a9a13dbde0ede3528eff848622e83abc36d57d9759b3ec"
+            },
+            {
+               "type": "shell",
+               "commands": [
+                   "sed -i '3i <releases><release version=\"19.08.0\" date=\"2019-08-15\"/></releases><content_rating type=\"oars-1.1\"/>' shell/org.kde.okular.appdata.xml"
+               ]
+           }
          ]
       }
    ]
