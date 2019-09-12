@@ -304,6 +304,10 @@
                "sha256": "721a0d02d5ff9277c4a9a13dbde0ede3528eff848622e83abc36d57d9759b3ec"
             },
             {
+                "type": "patch",
+                "path": "okular-mimetypes.patch"
+            },
+            {
                "type": "shell",
                "commands": [
                    "sed -i '3i <releases><release version=\"19.08.0\" date=\"2019-08-15\"/></releases><content_rating type=\"oars-1.1\"/>' shell/org.kde.okular.appdata.xml"
