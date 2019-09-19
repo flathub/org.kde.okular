@@ -302,7 +302,7 @@
                "type": "archive",
                "url": "https://download.kde.org/stable/applications/19.08.1/src/okular-19.08.1.tar.xz",
                "sha256": "9e363b73febd5da1a17e53a8f89914784b555c1f0085ddc0f55ef56082b0bd54"
-            }
+            },
             {
                 "type": "patch",
                 "path": "okular-mimetypes.patch"
