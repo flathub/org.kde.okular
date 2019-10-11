@@ -311,7 +311,7 @@
             {
                "type": "shell",
                "commands": [
-                   "sed -i '3i <releases><release version=\"19.08.1\" date=\"2019-09-05\"/></releases><content_rating type=\"oars-1.1\"/>' shell/org.kde.okular.appdata.xml"
+                   "sed -i '3i <releases><release version=\"19.08.2\" date=\"2019-10-10\"/></releases><content_rating type=\"oars-1.1\"/>' shell/org.kde.okular.appdata.xml"
                ]
            }
          ]
