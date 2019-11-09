@@ -296,7 +296,8 @@
          "buildsystem": "cmake-ninja",
          "builddir": true,
          "config-opts": [
-            "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+            "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
+            "-DBUILD_OKULARKIRIGAMI=OFF"
          ],
          "sources": [
             {
