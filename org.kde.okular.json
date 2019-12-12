@@ -193,8 +193,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://poppler.freedesktop.org/poppler-0.82.0.tar.xz",
-               "sha256": "234f8e573ea57fb6a008e7c1e56bfae1af5d1adf0e65f47555e1ae103874e4df"
+               "url": "https://poppler.freedesktop.org/poppler-0.83.0.tar.xz",
+               "sha256": "685c650d9771e1c340ea222b57c8bd3f7502e2191ccfe8adeb9e638dcb0b799b"
             }
          ]
       },
@@ -253,8 +253,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://download.kde.org/stable/applications/19.08.3/src/libkexiv2-19.08.3.tar.xz",
-               "sha256": "4c8a1acc4fe6c7105130ac93f5486ddbffb09921a9f34d3af418bd7e1695435e"
+               "url": "https://download.kde.org/stable/release-service/19.12.0/src/libkexiv2-19.12.0.tar.xz",
+               "sha256": "3bd7c155c4b7d01f8b1af7ee0d11c9efed18399a239135a25b570ff8650239b7"
             }
          ]
       },
@@ -268,8 +268,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://download.kde.org/stable/applications/19.08.3/src/kdegraphics-mobipocket-19.08.3.tar.xz",
-               "sha256": "d9ea38255c967dcf0de820e6ad663e721188f5541c18c459e611f6d72ddc8e8f"
+               "url": "https://download.kde.org/stable/release-service/19.12.0/src/kdegraphics-mobipocket-19.12.0.tar.xz",
+               "sha256": "c0f59133d66084b3341e02cfe91341cfb5722166b24a43e6e7b4f8a11badbf82"
             }
          ]
       },
@@ -284,19 +284,13 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://download.kde.org/stable/applications/19.08.3/src/okular-19.08.3.tar.xz",
-               "sha256": "cea30fe0c2c2b8394e76efe5c945eab1cc9619097291bd9236794b42b09523e5"
+               "url": "https://download.kde.org/stable/release-service/19.12.0/src/okular-19.12.0.tar.xz",
+               "sha256": "a17a8b5e46ac2cee103a6d41d4ceca9d3b557f6b80355a15b447a282f2c96454"
             },
             {
                 "type": "patch",
                 "path": "okular-mimetypes.patch"
-            },
-            {
-               "type": "shell",
-               "commands": [
-                   "sed -i '3i <releases><release version=\"19.08.3\" date=\"2019-11-07\"/></releases><content_rating type=\"oars-1.1\"/>' shell/org.kde.okular.appdata.xml"
-               ]
-           }
+            }
          ]
       }
    ]
