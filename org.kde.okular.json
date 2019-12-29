@@ -33,8 +33,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "http://www.pell.portland.or.us/~orc/Code/discount/discount-2.2.4.tar.bz2",
-               "sha256": "74fd1e3cc2b4eacf7325d3fd89df38b589db60d5dd0f4f14a0115f7da5e230a5"
+               "url": "https://github.com/Orc/discount/archive/v2.2.6.tar.gz",
+               "sha256": "0beb98a66a6e38ed125e2d0a161ff6b461f6a38538bb72498766f376c94a0ad3"
             }
          ]
       },
@@ -48,8 +48,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://dl.bintray.com/boostorg/release/1.69.0/source/boost_1_69_0.tar.bz2",
-               "sha256": "8f32d4617390d1c2d16f26a27ab60d97807b35440d45891fa340fc2648b04406"
+               "url": "https://dl.bintray.com/boostorg/release/1.72.0/source/boost_1_72_0.tar.bz2",
+               "sha256": "59c9b274bc451cf91a9ba1dd2c7fdcaf5d60b1b3aa83f2c9fa143417cc660722"
             }
          ]
       },
@@ -193,8 +193,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://poppler.freedesktop.org/poppler-0.83.0.tar.xz",
-               "sha256": "685c650d9771e1c340ea222b57c8bd3f7502e2191ccfe8adeb9e638dcb0b799b"
+               "url": "https://poppler.freedesktop.org/poppler-0.84.0.tar.xz",
+               "sha256": "c7a130da743b38a548f7a21fe5940506fb1949f4ebdd3209f0e5b302fa139731"
             }
          ]
       },
