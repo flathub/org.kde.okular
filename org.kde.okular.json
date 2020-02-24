@@ -8,6 +8,7 @@
    "finish-args": [
       "--share=ipc",
       "--socket=cups",
+      "--socket=pulseaudio",
       "--socket=x11",
       "--socket=wayland",
       "--env=QT_QPA_PLATFORM=xcb",
