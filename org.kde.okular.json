@@ -7,6 +7,7 @@
    "rename-icon": "okular",
    "finish-args": [
       "--share=ipc",
+      "--share=network",
       "--socket=cups",
       "--socket=pulseaudio",
       "--socket=x11",
