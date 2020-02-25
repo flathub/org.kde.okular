@@ -196,8 +196,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://poppler.freedesktop.org/poppler-0.84.0.tar.xz",
-               "sha256": "c7a130da743b38a548f7a21fe5940506fb1949f4ebdd3209f0e5b302fa139731"
+               "url": "https://poppler.freedesktop.org/poppler-0.85.0.tar.xz",
+               "sha256": "2bc875eb323002ae6b287e09980473518e2b2ed6b5b7d2e1089e36a6cd00d94b"
             }
          ]
       },
@@ -226,8 +226,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://download.kde.org/stable/frameworks/5.65/portingAids/kjs-5.65.0.tar.xz",
-               "sha256": "d7c9f86a500049a3aa940be469e86e5dbe00d41de9c9488916958ef1a1037df0"
+               "url": "https://download.kde.org/stable/frameworks/5.66/portingAids/kjs-5.66.0.tar.xz",
+               "sha256": "9bed62ebf9fba7d986ff7baabf6c4431f02826c9be70beda15cc62c692fb5f7f"
             }
          ]
       },
@@ -241,8 +241,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://download.kde.org/stable/frameworks/5.65/portingAids/khtml-5.65.0.tar.xz",
-               "sha256": "cfbfda470b4aecd189489e44983aa3c725ef0d234992afd38701273663d7ccba"
+               "url": "https://download.kde.org/stable/frameworks/5.66/portingAids/khtml-5.66.0.tar.xz",
+               "sha256": "ee34b082760262fb9b5e287960955075ec72179585e51567350a08bf0b4b7a10"
             }
          ]
       },
@@ -282,8 +282,8 @@
          "sources": [
             {
                 "type": "archive",
-                "url": "https://download.kde.org/stable/qca/2.2.1/qca-2.2.1.tar.xz",
-                "sha256": "d716d2d8e3ed8d95bbdb061f03081d7d032206f746a30a4d29d72196f50e7b02"
+                "url": "https://download.kde.org/stable/qca/2.3.0/qca-2.3.0.tar.xz",
+                "sha256": "1d68ef41a1b61dc9786beb923a68902a6276a77cced5e5ea7ff985ef113932d7"
             }
          ]
       },
