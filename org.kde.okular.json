@@ -256,8 +256,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://download.kde.org/stable/release-service/19.12.2/src/libkexiv2-19.12.2.tar.xz",
-               "sha256": "60a7efd97b47d08865043a13bc245b827bf152c85b8e0f2afed647469d95f430"
+               "url": "https://download.kde.org/stable/release-service/19.12.3/src/libkexiv2-19.12.3.tar.xz",
+               "sha256": "f5d0947f6b1ca0583d569990dc6f68bb01d8f7756a38bcc40b1e54f7814e4d4d"
             }
          ]
       },
@@ -271,8 +271,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://download.kde.org/stable/release-service/19.12.2/src/kdegraphics-mobipocket-19.12.2.tar.xz",
-               "sha256": "3227c6157216cafe793aa66e29a4f095e673ba4f8de532dc95cd94d11b6cdf10"
+               "url": "https://download.kde.org/stable/release-service/19.12.3/src/kdegraphics-mobipocket-19.12.3.tar.xz",
+               "sha256": "c459f9f04cf98cdc88a6763da8880f418e0c33b3cbd1d06b9a7347ebb470d835"
             }
          ]
       },
@@ -298,8 +298,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://download.kde.org/stable/release-service/19.12.2/src/okular-19.12.2.tar.xz",
-               "sha256": "4ceaba016576bfc02af3ee50ee90379ac449ba9a1ee33ca094fd77d7a12bc392"
+               "url": "https://download.kde.org/stable/release-service/19.12.3/src/okular-19.12.3.tar.xz",
+               "sha256": "c5de22cc4292e3b7adae3f6ef6566dcba33a1dd5995fb0b968ea3e705a4c04e0"
             },
             {
                 "type": "patch",
