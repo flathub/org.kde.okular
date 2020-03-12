@@ -131,14 +131,14 @@
          ],
          "cleanup": [
             "/bin",
-            "/share/ghostscript/9.27/doc/",
-            "/share/ghostscript/9.27/examples"
+            "/share/ghostscript/9.51/doc/",
+            "/share/ghostscript/9.51/examples"
          ],
          "sources": [
             {
                "type": "archive",
-               "url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs950/ghostscript-9.50.tar.gz",
-               "sha256": "0f53e89fd647815828fc5171613e860e8535b68f7afbc91bf89aee886769ce89"
+               "url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs951/ghostscript-9.51.tar.gz",
+               "sha256": "d8a57f345369770c7c74f6abde673586483ce7d11abe136c8dab1f622bd2f4c0"
             },
             {
                "type": "shell",
