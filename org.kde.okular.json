@@ -295,6 +295,10 @@
             "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
             "-DBUILD_OKULARKIRIGAMI=OFF"
          ],
+         "post-instal": [
+            "mv /app/bin/okular /app/bin/okular-bin",
+            "install -Dm755 okular-wrapper /app/bin/okular"
+         ],
          "sources": [
             {
                "type": "archive",
@@ -304,6 +308,14 @@
             {
                 "type": "patch",
                 "path": "okular-mimetypes.patch"
+            },
+            {
+                "type": "script",
+                "dest-filename": "okular-wrapper",
+                "commands": [
+                    "export TMPDIR=\"$XDG_RUNTIME_DIR/app/$FLATPAK_ID\"",
+                    "exec /app/bin/okular \"$@\""
+                ]
             }
          ]
       }
