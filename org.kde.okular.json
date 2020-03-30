@@ -15,7 +15,8 @@
       "--env=QT_QPA_PLATFORM=xcb",
       "--device=dri",
       "--filesystem=host",
-      "--filesystem=xdg-config/kdeglobals:ro"
+      "--filesystem=xdg-config/kdeglobals:ro",
+      "--filesystem=/tmp"
    ],
    "cleanup": [
       "/include",
