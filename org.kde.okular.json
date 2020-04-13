@@ -14,8 +14,7 @@
       "--socket=wayland",
       "--env=QT_QPA_PLATFORM=xcb",
       "--device=dri",
-      "--filesystem=host",
-      "--filesystem=xdg-config/kdeglobals:ro"
+      "--filesystem=host"
    ],
    "cleanup": [
       "/include",
@@ -196,8 +195,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://poppler.freedesktop.org/poppler-0.86.1.tar.xz",
-               "sha256": "af630a277c8e194c31339c5446241834aed6ed3d4b4dc7080311e51c66257f6c"
+               "url": "https://poppler.freedesktop.org/poppler-0.87.0.tar.xz",
+               "sha256": "6f602b9c24c2d05780be93e7306201012e41459f289b8279a27a79431ad4150e"
             }
          ]
       },
