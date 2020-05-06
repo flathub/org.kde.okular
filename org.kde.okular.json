@@ -280,9 +280,9 @@
          "buildsystem": "cmake-ninja",
          "sources": [
             {
-                "type": "archive",
-                "url": "https://download.kde.org/stable/qca/2.3.0/qca-2.3.0.tar.xz",
-                "sha256": "1d68ef41a1b61dc9786beb923a68902a6276a77cced5e5ea7ff985ef113932d7"
+               "type": "archive",
+               "url": "https://download.kde.org/stable/qca/2.3.0/qca-2.3.0.tar.xz",
+               "sha256": "1d68ef41a1b61dc9786beb923a68902a6276a77cced5e5ea7ff985ef113932d7"
             }
          ]
       },
@@ -294,9 +294,9 @@
             "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
             "-DBUILD_OKULARKIRIGAMI=OFF"
          ],
-         "post-instal": [
+         "post-install": [
             "mv /app/bin/okular /app/bin/okular-bin",
-            "install -Dm755 okular-wrapper /app/bin/okular"
+            "install -Dm755 ../okular-wrapper /app/bin/okular"
          ],
          "sources": [
             {
@@ -305,16 +305,16 @@
                "sha256": "1b6521b4eaa0a0eb41a39c3f84252d9833f6d26fa410afaef815ec661737dfe7"
             },
             {
-                "type": "patch",
-                "path": "okular-mimetypes.patch"
+               "type": "patch",
+               "path": "okular-mimetypes.patch"
             },
             {
-                "type": "script",
-                "dest-filename": "okular-wrapper",
-                "commands": [
-                    "export TMPDIR=\"$XDG_RUNTIME_DIR/app/$FLATPAK_ID\"",
-                    "exec /app/bin/okular \"$@\""
-                ]
+               "type": "script",
+               "dest-filename": "okular-wrapper",
+               "commands": [
+                  "export TMPDIR=\"$XDG_RUNTIME_DIR/app/$FLATPAK_ID\"",
+                  "exec /app/bin/okular-bin \"$@\""
+               ]
             }
          ]
       }
