@@ -158,8 +158,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "http://libspectre.freedesktop.org/releases/libspectre-0.2.8.tar.gz",
-               "sha256": "65256af389823bbc4ee4d25bfd1cc19023ffc29ae9f9677f2d200fa6e98bc7a8"
+               "url": "http://libspectre.freedesktop.org/releases/libspectre-0.2.9.tar.gz",
+               "sha256": "49ae9c52b5af81b405455c19fe24089d701761da2c45d22164a99576ceedfbed"
             }
          ]
       },
@@ -195,8 +195,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://poppler.freedesktop.org/poppler-0.87.0.tar.xz",
-               "sha256": "6f602b9c24c2d05780be93e7306201012e41459f289b8279a27a79431ad4150e"
+               "url": "https://poppler.freedesktop.org/poppler-0.88.0.tar.xz",
+               "sha256": "b4453804e9a5a519e6ceee0ac8f5efc229e3b0bf70419263c239124474d256c7"
             }
          ]
       },
