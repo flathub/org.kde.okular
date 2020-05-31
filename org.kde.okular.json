@@ -129,7 +129,6 @@
             "soinstall"
          ],
          "cleanup": [
-            "/bin",
             "/share/ghostscript/9.52/doc/",
             "/share/ghostscript/9.52/examples"
          ],
