@@ -24,6 +24,53 @@
       "/share/man"
    ],
    "modules": [
+     {
+         "name": "gnustep-make",
+         "buildsystem": "simple",
+         "build-commands": [
+            "./configure --prefix=/app",
+            "make -j $FLATPAK_BUILDER_N_JOBS install"
+         ],
+         "sources": [
+            {
+               "type": "archive",
+               "url": "https://github.com/gnustep/tools-make/archive/make-2_8_0.tar.gz",
+               "sha256": "a9df9b0d756a93306a8e0cb9e127f5688a459dad3d356cd760565833da605825"
+            }
+         ]
+      },
+      {
+         "name": "gnustep",
+         "buildsystem": "simple",
+         "build-commands": [
+            "./configure --prefix=/app",
+            "make -j $FLATPAK_BUILDER_N_JOBS install",
+            "ls /app/include"
+         ],
+         "sources": [
+            {
+               "type": "archive",
+               "url": "https://github.com/gnustep/libs-base/releases/download/base-1_27_0/gnustep-base-1.27.0.tar.gz",
+               "sha256": "8803fa1fdf23f90264a81ad2d9fbe97ba66d6e313e396a28fd7c10d2caceb283"
+            }
+         ]
+      },
+      {
+         "name": "unarchiver",
+         "buildsystem": "simple",
+         "build-commands": [
+            "sed -s -i 's#/usr/include/GNUstep#/app/include#g' */Makefile.linux && cd XADMaster && make -j $FLATPAK_BUILDER_N_JOBS -f Makefile.linux",
+            "install -m755 XADMaster/unar XADMaster/lsar /app/bin/"
+         ],
+         "sources": [
+            {
+               "type": "archive",
+               "url": "https://cdn.theunarchiver.com/downloads/TheUnarchiverSource.zip",
+               "sha256": "ac4cedf9b49375c0f805bda010fa03629d05ab283a0a8e35bf2dd01ae477e0a1",
+               "strip-components": 0
+            }
+         ]
+      },
       {
          "name": "discount",
          "buildsystem": "simple",
