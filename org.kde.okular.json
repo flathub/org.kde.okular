@@ -176,14 +176,14 @@
             "soinstall"
          ],
          "cleanup": [
-            "/share/ghostscript/9.52/doc/",
-            "/share/ghostscript/9.52/examples"
+            "/share/ghostscript/9.53/doc/",
+            "/share/ghostscript/9.53/examples"
          ],
          "sources": [
             {
                "type": "archive",
-               "url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs952/ghostscript-9.52.tar.gz",
-               "sha256": "c2501d8e8e0814c4a5aa7e443e230e73d7af7f70287546f7b697e5ef49e32176"
+               "url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs9530/ghostscript-9.53.0.tar.gz",
+               "sha256": "e2c630f2330208616cdebc38ca474cdf183cca3443361b7952549c60bc8531be"
             },
             {
                "type": "shell",
@@ -241,8 +241,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://poppler.freedesktop.org/poppler-20.08.0.tar.xz",
-               "sha256": "ae65fef04bbf63259a6352e7b620719115d4fb97f5079b0b8b00a8eb0c86eca5"
+               "url": "https://poppler.freedesktop.org/poppler-20.09.0.tar.xz",
+               "sha256": "4ed6eb5ddc4c37f2435c9d78ff9c7c4036455aea3507d1ce8400070aab745363"
             }
          ]
       },
