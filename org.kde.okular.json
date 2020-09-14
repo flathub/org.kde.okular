@@ -182,8 +182,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs9530/ghostscript-9.53.0.tar.gz",
-               "sha256": "e2c630f2330208616cdebc38ca474cdf183cca3443361b7952549c60bc8531be"
+               "url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs9531/ghostscript-9.53.1.tar.gz",
+               "sha256": "c89652ab2cf1a43688d8055d1ae55a9814d152e4b1c77c002a32c7d83621b12a"
             },
             {
                "type": "shell",
