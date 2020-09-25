@@ -176,14 +176,14 @@
             "soinstall"
          ],
          "cleanup": [
-            "/share/ghostscript/9.53/doc/",
-            "/share/ghostscript/9.53/examples"
+            "/share/ghostscript/9.53.2/doc/",
+            "/share/ghostscript/9.53.2/examples"
          ],
          "sources": [
             {
                "type": "archive",
-               "url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs9531/ghostscript-9.53.1.tar.gz",
-               "sha256": "c89652ab2cf1a43688d8055d1ae55a9814d152e4b1c77c002a32c7d83621b12a"
+               "url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs9532/ghostscript-9.53.2.tar.gz",
+               "sha256": "e4861779ade8e492aea6ee196515596ee5669debf98f27a52a9f2ce7a549fb89"
             },
             {
                "type": "shell",
