@@ -301,8 +301,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://download.kde.org/stable/release-service/20.08.2/src/libkexiv2-20.08.2.tar.xz",
-               "sha256": "793c4d11bb1b60beca7b25a2427650b3f358364c55be022dfd4a7ccfd889578d"
+               "url": "https://download.kde.org/stable/release-service/20.08.3/src/libkexiv2-20.08.3.tar.xz",
+               "sha256": "d4e5c35d8d60ec46d160830197d05e06a343da24d5541eb2a0ff75c30f4903d2"
             }
          ]
       },
@@ -316,8 +316,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://download.kde.org/stable/release-service/20.08.2/src/kdegraphics-mobipocket-20.08.2.tar.xz",
-               "sha256": "8972079756633abe8cbfaa39cdff9d56f89958861e6e418738311bcdc52771a5"
+               "url": "https://download.kde.org/stable/release-service/20.08.3/src/kdegraphics-mobipocket-20.08.3.tar.xz",
+               "sha256": "1876ef0993214c97ddd31105a230c7f68835c050279898893fb9d77b2c5fdd45"
             }
          ]
       },
@@ -365,8 +365,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://download.kde.org/stable/release-service/20.08.2/src/okular-20.08.2.tar.xz",
-               "sha256": "6f1885ed8050a55bb2cbf05089b452f555852e003ec7fe89fe472c0dbc92e65b"
+               "url": "https://download.kde.org/stable/release-service/20.08.3/src/okular-20.08.3.tar.xz",
+               "sha256": "3f4d084d738a7dfb996d5f1bb5becd2a96b0fbb35135010460f239cdd98ca9e0"
             },
             {
                "type": "patch",
