@@ -82,8 +82,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://github.com/Orc/discount/archive/v2.2.6.tar.gz",
-               "sha256": "0beb98a66a6e38ed125e2d0a161ff6b461f6a38538bb72498766f376c94a0ad3"
+               "url": "https://github.com/Orc/discount/archive/v2.2.7.tar.gz",
+               "sha256": "72c1325ddfc40871d6810f1e272cf2d45b361f26357eb38f170fd04d737bb9f2"
             }
          ]
       },
@@ -97,8 +97,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://dl.bintray.com/boostorg/release/1.72.0/source/boost_1_72_0.tar.bz2",
-               "sha256": "59c9b274bc451cf91a9ba1dd2c7fdcaf5d60b1b3aa83f2c9fa143417cc660722"
+               "url": "https://dl.bintray.com/boostorg/release/1.74.0/source/boost_1_74_0.tar.bz2",
+               "sha256": "83bfc1507731a0906e387fc28b7ef5417d591429e51e788417fe9ff025e116b1"
             }
          ]
       },
@@ -112,8 +112,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://libzip.org/download/libzip-1.6.1.tar.xz",
-               "sha256": "705dac7a671b3f440181481e607b0908129a9cf1ddfcba75d66436c0e7d33641"
+               "url": "https://libzip.org/download/libzip-1.7.3.tar.xz",
+               "sha256": "a60473ffdb7b4260c08bfa19c2ccea0438edac11193c3afbbb1f17fbcf6c6132"
             }
          ]
       },
@@ -241,8 +241,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://poppler.freedesktop.org/poppler-20.11.0.tar.xz",
-               "sha256": "021557074516492375c2bb4226a413aad431159e9177f9f14dff4159d2723b14"
+               "url": "https://poppler.freedesktop.org/poppler-20.12.1.tar.xz",
+               "sha256": "d0aa2586c0a4296c775f0d2045f28bb95a694113fc995f95350faa12930f7b35"
             }
          ]
       },
@@ -271,8 +271,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://download.kde.org/stable/frameworks/5.73/portingAids/kjs-5.73.0.tar.xz",
-               "sha256": "97b52557212a33d59a4b3a8c34ea8a94cd5f840fb0798e770164d3cb1e755be5"
+               "url": "https://download.kde.org/stable/frameworks/5.76/portingAids/kjs-5.76.0.tar.xz",
+               "sha256": "829eb1308b9b07cdd07b34d80eb5e3fcf5225fa4816da19bce886add600bb62a"
             }
          ]
       },
@@ -286,8 +286,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://download.kde.org/stable/frameworks/5.73/portingAids/khtml-5.73.0.tar.xz",
-               "sha256": "378a5aaa6c796d313a63b4cf1365cdd980f2bc21e9033354f2f1317d1db9c262"
+               "url": "https://download.kde.org/stable/frameworks/5.76/portingAids/khtml-5.76.0.tar.xz",
+               "sha256": "163139cf9ed9c43bba9532e64ae6376e8ced9b19ea8bb8235ff91c91c4c5a3f4"
             }
          ]
       },
