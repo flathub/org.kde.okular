@@ -160,7 +160,7 @@
             {
                "type": "archive",
                "url": "http://downloads.sourceforge.net/djvu/djvulibre-3.5.28.tar.gz",
-               "sha256": "82e392a9cccfee94fa604126c67f06dbc43ed5f9f0905d15b6c8164f83ed5655"
+               "sha256": "fcd009ea7654fde5a83600eb80757bd3a76998e47d13c66b54c8db849f8f2edc"
             }
          ]
       },
@@ -259,8 +259,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://poppler.freedesktop.org/poppler-21.01.0.tar.xz",
-               "sha256": "016dde34e5f868ea98a32ca99b643325a9682281500942b7113f4ec88d20e2f3"
+               "url": "https://poppler.freedesktop.org/poppler-21.02.0.tar.xz",
+               "sha256": "5c14759c99891e6e472aced6d5f0ff1dacf85d80cd9026d365c55c653edf792c"
             }
          ]
       },
@@ -319,8 +319,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://download.kde.org/stable/release-service/20.12.1/src/libkexiv2-20.12.1.tar.xz",
-               "sha256": "60b3c6d16ea02b335ce5b377e153e39268726d9b80187674547dccfe06f5d4ef"
+               "url": "https://download.kde.org/stable/release-service/20.12.2/src/libkexiv2-20.12.2.tar.xz",
+               "sha256": "eb364ea254d8d72317124e725b4a5b2db0d45c627020ad934f6e1f7f66174882"
             }
          ]
       },
@@ -334,8 +334,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://download.kde.org/stable/release-service/20.12.1/src/kdegraphics-mobipocket-20.12.1.tar.xz",
-               "sha256": "0d06f12fa1a5475d703839f2974806acb54b7c8ce0a5068e75144c561c237dd8"
+               "url": "https://download.kde.org/stable/release-service/20.12.2/src/kdegraphics-mobipocket-20.12.2.tar.xz",
+               "sha256": "c6844a0b7a84cac2f6d3b1a44645488b3dd5fc8e89214a0c512a7eb7ef8e4409"
             }
          ]
       },
@@ -383,8 +383,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://download.kde.org/stable/release-service/20.12.1/src/okular-20.12.1.tar.xz",
-               "sha256": "2ca17ad0b2a1a0f9f70c7ca4bc1f44a9ed758b0ca6a8e5c9935a467f883df53e"
+               "url": "https://download.kde.org/stable/release-service/20.12.2/src/okular-20.12.2.tar.xz",
+               "sha256": "78a9bb766b7ae79fba630aac6e8804876e1f99de2ede37d6d33ce7442975a9a4"
             },
             {
                "type": "patch",
