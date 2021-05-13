@@ -97,7 +97,7 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://dl.bintray.com/boostorg/release/1.74.0/source/boost_1_74_0.tar.bz2",
+               "url": "https://boostorg.jfrog.io/artifactory/main/release/1.74.0/source/boost_1_74_0.tar.bz2",
                "sha256": "83bfc1507731a0906e387fc28b7ef5417d591429e51e788417fe9ff025e116b1"
             }
          ]
@@ -319,8 +319,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://download.kde.org/stable/release-service/21.04.0/src/libkexiv2-21.04.0.tar.xz",
-               "sha256": "39dfb5d67ed22175972fb179c7b3ee5b18be34b821c3266b52cb1f82ef8a303f"
+               "url": "https://download.kde.org/stable/release-service/21.04.1/src/libkexiv2-21.04.1.tar.xz",
+               "sha256": "b3f1f4e2f6b30008e008dbd000d428654f46c74b146af622cf60c512bbfde092"
             }
          ]
       },
@@ -334,8 +334,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://download.kde.org/stable/release-service/21.04.0/src/kdegraphics-mobipocket-21.04.0.tar.xz",
-               "sha256": "57e436f2babdbf28bcce0ae7802638a80e18ee1ccbe0f7bfae6775c19c73fd02"
+               "url": "https://download.kde.org/stable/release-service/21.04.1/src/kdegraphics-mobipocket-21.04.1.tar.xz",
+               "sha256": "f5746fcc53ce307a6b7c86b63116268f68b7045035b6df5638ae7083ba8bddcd"
             }
          ]
       },
@@ -383,8 +383,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://download.kde.org/stable/release-service/21.04.0/src/okular-21.04.0.tar.xz",
-               "sha256": "1ee7c4c19a88ccac8351b150a7b4fd601db83634a7d361b10e6324dfe9cb1b50"
+               "url": "https://download.kde.org/stable/release-service/21.04.1/src/okular-21.04.1.tar.xz",
+               "sha256": "95804e90130a4d5fdeb5f88bb3bfc29b4dbe1592c5a343786779ce9b4fa11e3d"
             },
             {
                "type": "patch",
