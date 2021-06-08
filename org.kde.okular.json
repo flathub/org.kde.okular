@@ -348,8 +348,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://download.kde.org/stable/qca/2.3.1/qca-2.3.1.tar.xz",
-               "sha256": "c13851109abefc4623370989fae3a745bf6b1acb3c2a13a8958539823e974e4b"
+               "url": "https://download.kde.org/stable/qca/2.3.3/qca-2.3.3.tar.xz",
+               "sha256": "562e8f9b8542944e2c0c18c45c05bb202f620db84032790c54b424454f727b67"
             }
          ]
       },
