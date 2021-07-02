@@ -259,8 +259,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://poppler.freedesktop.org/poppler-21.03.0.tar.xz",
-               "sha256": "fd51ead4aac1d2f4684fa6e7b0ec06f0233ed21667e720a4e817e4455dd63d27"
+               "url": "https://poppler.freedesktop.org/poppler-21.07.0.tar.xz",
+               "sha256": "e26ab29f68065de4d6562f0a3e2b5435a83ca92be573b99a1c81998fa286a4d4"
             }
          ]
       },
