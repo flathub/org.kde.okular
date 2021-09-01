@@ -34,8 +34,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://github.com/gnustep/tools-make/archive/make-2_8_0.tar.gz",
-               "sha256": "a9df9b0d756a93306a8e0cb9e127f5688a459dad3d356cd760565833da605825"
+               "url": "https://github.com/gnustep/tools-make/archive/make-2_9_0.tar.gz",
+               "sha256": "f7c69bea7f26ca5d4ce6ad82fbe94d2405cf238d652ea608fe387a70a5e0232c"
             }
          ]
       },
@@ -50,8 +50,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://github.com/gnustep/libs-base/releases/download/base-1_27_0/gnustep-base-1.27.0.tar.gz",
-               "sha256": "8803fa1fdf23f90264a81ad2d9fbe97ba66d6e313e396a28fd7c10d2caceb283"
+               "url": "https://github.com/gnustep/libs-base/releases/download/base-1_28_0/gnustep-base-1.28.0.tar.gz",
+               "sha256": "c7d7c6e64ac5f5d0a4d5c4369170fc24ed503209e91935eb0e2979d1601039ed"
             }
          ]
       },
@@ -259,8 +259,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://poppler.freedesktop.org/poppler-21.07.0.tar.xz",
-               "sha256": "e26ab29f68065de4d6562f0a3e2b5435a83ca92be573b99a1c81998fa286a4d4"
+               "url": "https://poppler.freedesktop.org/poppler-21.09.0.tar.xz",
+               "sha256": "5a47fef738c2b99471f9b459a8bf8b40aefb7eed92caa4861c3798b2e126d05b"
             }
          ]
       },
@@ -274,8 +274,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://www.exiv2.org/builds/exiv2-0.27.2-Source.tar.gz",
-               "sha256": "2652f56b912711327baff6dc0c90960818211cf7ab79bb5e1eb59320b78d153f"
+               "url": "https://www.exiv2.org/builds/exiv2-0.27.4-Source.tar.gz",
+               "sha256": "84366dba7c162af9a7603bcd6c16f40fe0e9af294ba2fd2f66ffffb9fbec904e"
             }
          ]
       },
