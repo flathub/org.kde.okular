@@ -340,20 +340,6 @@
          ]
       },
       {
-         "name": "qca",
-         "buildsystem": "cmake-ninja",
-         "config-opts": [
-             "-DBUILD_TESTS=OFF"
-         ],
-         "sources": [
-            {
-               "type": "archive",
-               "url": "https://download.kde.org/stable/qca/2.3.3/qca-2.3.3.tar.xz",
-               "sha256": "562e8f9b8542944e2c0c18c45c05bb202f620db84032790c54b424454f727b67"
-            }
-         ]
-      },
-      {
         "name": "cups",
         "buildsystem": "simple",
         "build-commands": [
