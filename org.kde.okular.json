@@ -112,8 +112,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://libzip.org/download/libzip-1.7.3.tar.xz",
-               "sha256": "a60473ffdb7b4260c08bfa19c2ccea0438edac11193c3afbbb1f17fbcf6c6132"
+               "url": "https://libzip.org/download/libzip-1.8.0.tar.xz",
+               "sha256": "f0763bda24ba947e80430be787c4b068d8b6aa6027a26a19923f0acfa3dac97e"
             }
          ]
       },
@@ -259,8 +259,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://poppler.freedesktop.org/poppler-21.11.0.tar.xz",
-               "sha256": "31b76b5cac0a48612fdd154c02d9eca01fd38fb8eaa77c1196840ecdeb53a584"
+               "url": "https://poppler.freedesktop.org/poppler-21.12.0.tar.xz",
+               "sha256": "acb840c2c1ec07d07e53c57c4b3a1ff3e3ee2d888d44e1e9f2f01aaf16814de7"
             }
          ]
       },
@@ -274,8 +274,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://www.exiv2.org/builds/exiv2-0.27.4-Source.tar.gz",
-               "sha256": "84366dba7c162af9a7603bcd6c16f40fe0e9af294ba2fd2f66ffffb9fbec904e"
+               "url": "https://www.exiv2.org/builds/exiv2-0.27.5-Source.tar.gz",
+               "sha256": "35a58618ab236a901ca4928b0ad8b31007ebdc0386d904409d825024e45ea6e2"
             }
          ]
       },
@@ -289,8 +289,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://download.kde.org/stable/frameworks/5.87/portingAids/kjs-5.87.0.tar.xz",
-               "sha256": "e879d3f1df4facb42abc87c0fa5a8958d4ea63962d2ff19caf56cc319f841cc6"
+               "url": "https://download.kde.org/stable/frameworks/5.88/portingAids/kjs-5.88.0.tar.xz",
+               "sha256": "ac1094b7ca3a6a88e09428a4c4d09c8af7f487dc2c3c82440abf59867bd87b12"
             }
          ]
       },
@@ -304,8 +304,8 @@
          "sources": [
             {
                "type": "archive",
-               "url": "https://download.kde.org/stable/frameworks/5.87/portingAids/khtml-5.87.0.tar.xz",
-               "sha256": "ced877bde898192bf96694c0c8598197d29931782ed8f2409f1165c2bffdb7cb"
+               "url": "https://download.kde.org/stable/frameworks/5.88/portingAids/khtml-5.88.0.tar.xz",
+               "sha256": "5e5d0b57a7300ae48a6137e2ec8e9942959eb7e4eec9d936cc06961733e73fae"
             }
          ]
       },
@@ -349,8 +349,8 @@
         "sources": [
             {
                 "type": "archive",
-                "url": "https://github.com/apple/cups/releases/download/v2.3.3/cups-2.3.3-source.tar.gz",
-                "sha256": "261fd948bce8647b6d5cb2a1784f0c24cc52b5c4e827b71d726020bcc502f3ee"
+                "url": "https://github.com/OpenPrinting/cups/releases/download/v2.4.0/cups-2.4.0-source.tar.gz",
+                "sha256": "9abecec128ca6847c5bb2d3e3d30c87b782c0697b9acf284d16fa38f80a3a6de"
             }
         ]
       },
