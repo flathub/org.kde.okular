@@ -35,7 +35,13 @@
             {
                "type": "archive",
                "url": "https://github.com/gnustep/tools-make/archive/make-2_9_0.tar.gz",
-               "sha256": "f7c69bea7f26ca5d4ce6ad82fbe94d2405cf238d652ea608fe387a70a5e0232c"
+               "sha256": "f7c69bea7f26ca5d4ce6ad82fbe94d2405cf238d652ea608fe387a70a5e0232c",
+               "x-checker-data": {
+                  "type": "anitya",
+                  "project-id": 6845,
+                  "stable-only": true,
+                  "url-template": "https://boostorg.jfrog.io/artifactory/main/release/$version/source/boost_${major}_${minor}_$patch.tar.bz2"
+               }
             }
          ]
       },
