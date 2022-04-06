@@ -224,8 +224,8 @@
                 "soinstall"
             ],
             "cleanup": [
-                "/share/ghostscript/9.55.0/doc/",
-                "/share/ghostscript/9.55.0/examples"
+                "/share/ghostscript/*/doc/",
+                "/share/ghostscript/*/examples"
             ],
             "sources": [
                 {
