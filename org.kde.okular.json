@@ -373,8 +373,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/frameworks/5.92/portingAids/kjs-5.92.0.tar.xz",
-                    "sha256": "04072d527501c92f1e0144e9dcc114e108bfb5a2b50bed8a9b037474aaa6f118",
+                    "url": "https://download.kde.org/stable/frameworks/5.93/portingAids/kjs-5.93.0.tar.xz",
+                    "sha256": "85aa01de9c2775564c895d3efbcfb8cc68da9a84f511176fef16742cbbf90942",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8762,
@@ -394,8 +394,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/frameworks/5.92/portingAids/khtml-5.92.0.tar.xz",
-                    "sha256": "91a1d79ea382a25614810cd59f800f0a34c6e86c69ef6d0a08d2655f2a93171a",
+                    "url": "https://download.kde.org/stable/frameworks/5.93/portingAids/khtml-5.93.0.tar.xz",
+                    "sha256": "31bfb6752ed7248b98e2bdc723e8e10c11b5fc9f7bf7edd8dedad1162f86614b",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8762,
