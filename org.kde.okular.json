@@ -135,8 +135,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://libzip.org/download/libzip-1.8.0.tar.xz",
-                    "sha256": "f0763bda24ba947e80430be787c4b068d8b6aa6027a26a19923f0acfa3dac97e",
+                    "url": "https://libzip.org/download/libzip-1.9.0.tar.xz",
+                    "sha256": "a17240ee88f0705a9067bb0087fde1cee73948b3cf6c3978a21a58fdb73b76a2",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10649,
@@ -372,8 +372,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/frameworks/5.94/portingAids/kjs-5.94.0.tar.xz",
-                    "sha256": "f93e14a2deb978ccb8e7b0e7e6a2e4c3a23fe9ffe5a64d569c824302d93b3c1b",
+                    "url": "https://download.kde.org/stable/frameworks/5.95/portingAids/kjs-5.95.0.tar.xz",
+                    "sha256": "5a17f35ddb9c98e83a6891ff4e82e50ab810263c2fa2d45b3e1a60312e795ebc",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8762,
@@ -393,8 +393,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/frameworks/5.94/portingAids/khtml-5.94.0.tar.xz",
-                    "sha256": "98bd2a284a2fbc1c2d93cd6719d18baeccd5258dfaa48b1fe74bb61e24fe9b79",
+                    "url": "https://download.kde.org/stable/frameworks/5.95/portingAids/khtml-5.95.0.tar.xz",
+                    "sha256": "534b8a6341bd9380ead8b1df55032665bfee4b92713a46b116910b31facb3e06",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8762,
