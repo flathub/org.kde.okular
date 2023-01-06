@@ -414,8 +414,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/22.12.0/src/libkexiv2-22.12.0.tar.xz",
-                    "sha256": "81c7c261638d72ec9f8ee460633f7d965927bf9ce6677ec1abc37362ce3ea8ae",
+                    "url": "https://download.kde.org/stable/release-service/22.12.1/src/libkexiv2-22.12.1.tar.xz",
+                    "sha256": "230834bbbf57f0b4126ea50a53fabad1a87831a000d20b18fdb2753e2ae0b9e7",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
@@ -435,8 +435,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/22.12.0/src/kdegraphics-mobipocket-22.12.0.tar.xz",
-                    "sha256": "6537a1783bab8ec121a3e2f182234b9fef531705d39246ca12f3cfae24c5d09c",
+                    "url": "https://download.kde.org/stable/release-service/22.12.1/src/kdegraphics-mobipocket-22.12.1.tar.xz",
+                    "sha256": "867a0724ebd624323a0f52158e9aa8c847f102deb416034be9d73ef50495318e",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
@@ -482,8 +482,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/22.12.0/src/okular-22.12.0.tar.xz",
-                    "sha256": "2ca1a9415d711fc8c9aad75e5c270c06e848891ca7e141872a762541eb316117",
+                    "url": "https://download.kde.org/stable/release-service/22.12.1/src/okular-22.12.1.tar.xz",
+                    "sha256": "5c4d673d9737f81442fd13cba8ec0e7844f089ee7b62a837fcda0138217b0a70",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
