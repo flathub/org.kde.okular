@@ -93,8 +93,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/Orc/discount/archive/v2.2.7b.tar.gz",
-                    "sha256": "48343272aa93ae913187ff678b3e52efa722f133e1efcaddc20cf775e8a517ec",
+                    "url": "https://github.com/Orc/discount/archive/v3.0.0a.tar.gz",
+                    "sha256": "9a20af1ee09d2369543a421ba65e6fc1fd482ad3a5b1828132441f2c8dd98afc",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 12139,
@@ -330,8 +330,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://poppler.freedesktop.org/poppler-23.02.0.tar.xz",
-                    "sha256": "3315dda270fe2b35cf1f41d275948c39652fa863b90de0766f6b293d9a558fc9",
+                    "url": "https://poppler.freedesktop.org/poppler-23.03.0.tar.xz",
+                    "sha256": "b04148bf849c1965ada7eff6be4685130e3a18a84e0cce73bf9bc472ec32f2b4",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 3686,
@@ -435,8 +435,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/22.12.2/src/kdegraphics-mobipocket-22.12.2.tar.xz",
-                    "sha256": "d625cbbdb946c253bbbb24d91bb0e35f213d2a64237f7ba3bdf73749cc96c3d3",
+                    "url": "https://download.kde.org/stable/release-service/22.12.3/src/kdegraphics-mobipocket-22.12.3.tar.xz",
+                    "sha256": "4f4023d639b12703c2992861ffd408fac2366adfae8b0b1f0f497b36a5f8a8f1",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
@@ -482,8 +482,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/22.12.2/src/okular-22.12.2.tar.xz",
-                    "sha256": "5c2ecb812bd39a6dae01913b074f545e0118ee4c8e4370b6ed48fa8fd8541150",
+                    "url": "https://download.kde.org/stable/release-service/22.12.3/src/okular-22.12.3.tar.xz",
+                    "sha256": "01ef28755993ce0d5acd22a8a25d80497d813ffc399c87bb0bf76ee32a46da02",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
