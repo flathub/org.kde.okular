@@ -93,8 +93,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/Orc/discount/archive/v2.2.7b.tar.gz",
-                    "sha256": "48343272aa93ae913187ff678b3e52efa722f133e1efcaddc20cf775e8a517ec",
+                    "url": "https://github.com/Orc/discount/archive/v3.0.0a.tar.gz",
+                    "sha256": "9a20af1ee09d2369543a421ba65e6fc1fd482ad3a5b1828132441f2c8dd98afc",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 12139,
@@ -330,8 +330,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://poppler.freedesktop.org/poppler-23.02.0.tar.xz",
-                    "sha256": "3315dda270fe2b35cf1f41d275948c39652fa863b90de0766f6b293d9a558fc9",
+                    "url": "https://poppler.freedesktop.org/poppler-23.03.0.tar.xz",
+                    "sha256": "b04148bf849c1965ada7eff6be4685130e3a18a84e0cce73bf9bc472ec32f2b4",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 3686,
