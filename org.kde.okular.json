@@ -414,8 +414,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/22.12.2/src/libkexiv2-22.12.2.tar.xz",
-                    "sha256": "14b15d0610720cf09d83096eb3a118990dbef55a1dbe6d7e9db439f634a36400",
+                    "url": "https://download.kde.org/stable/release-service/22.12.3/src/libkexiv2-22.12.3.tar.xz",
+                    "sha256": "6f9d6e28bb6e6dc73cbbbb0b0f788b6ada328616568a023b286126ce67332a94",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
