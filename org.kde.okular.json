@@ -229,13 +229,13 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs1000/ghostscript-10.0.0.tar.gz",
-                    "sha256": "a57764d70caf85e2fc0b0f59b83b92e25775631714dcdb97cc6e0cea414bb5a3",
+                    "url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10010/ghostscript-10.01.0.tar.gz",
+                    "sha256": "7e32cf6ea3352ffec6944f227e892b72936d3b039a33f4f68da0678b72cee9cf",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1157,
                         "stable-only": true,
-                        "url-template": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs$major$minor$patch/ghostscript-$version.tar.gz"
+                        "url-template": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs${major}0$minor$patch/ghostscript-$version.tar.gz"
                     }
                 },
                 {
@@ -372,8 +372,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/frameworks/5.103/portingAids/kjs-5.103.0.tar.xz",
-                    "sha256": "5a46e153dffb8738f265cb1c127b05b47bd234335bc79705beba55aa68d89407",
+                    "url": "https://download.kde.org/stable/frameworks/5.104/portingAids/kjs-5.104.0.tar.xz",
+                    "sha256": "bdd6b3f095fa43a3ce779cf380d621f6d2923cd7f33480d3bd281f756b44eb35",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8762,
@@ -393,8 +393,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/frameworks/5.103/portingAids/khtml-5.103.0.tar.xz",
-                    "sha256": "9a64522088e0f16dbb13c09c7558fb7000f7969140c888cc58c6b70c42b44634",
+                    "url": "https://download.kde.org/stable/frameworks/5.104/portingAids/khtml-5.104.0.tar.xz",
+                    "sha256": "e11ba874cef364d96da981adde027f14012f261f26ce9028928bba3e10f6c447",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8762,
