@@ -229,8 +229,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10010/ghostscript-10.01.0.tar.gz",
-                    "sha256": "7e32cf6ea3352ffec6944f227e892b72936d3b039a33f4f68da0678b72cee9cf",
+                    "url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10011/ghostscript-10.01.1.tar.gz",
+                    "sha256": "4df18a808cd4369f25e02dbcec2f133cb6d674627b2c6b1502020e58d43e32ce",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1157,
