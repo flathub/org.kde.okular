@@ -93,8 +93,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/Orc/discount/archive/v2.2.7b.tar.gz",
-                    "sha256": "48343272aa93ae913187ff678b3e52efa722f133e1efcaddc20cf775e8a517ec",
+                    "url": "https://github.com/Orc/discount/archive/v3.0.0a.tar.gz",
+                    "sha256": "9a20af1ee09d2369543a421ba65e6fc1fd482ad3a5b1828132441f2c8dd98afc",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 12139,
@@ -393,8 +393,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/frameworks/5.104/portingAids/khtml-5.104.0.tar.xz",
-                    "sha256": "e11ba874cef364d96da981adde027f14012f261f26ce9028928bba3e10f6c447",
+                    "url": "https://download.kde.org/stable/frameworks/5.105/portingAids/khtml-5.105.0.tar.xz",
+                    "sha256": "14381ec7008fac941a4b37c8cc6a40e5faad961ced6a6aedf53be855bc12b920",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8762,
