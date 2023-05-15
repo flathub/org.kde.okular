@@ -387,8 +387,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/frameworks/5.105/portingAids/khtml-5.105.0.tar.xz",
-                    "sha256": "14381ec7008fac941a4b37c8cc6a40e5faad961ced6a6aedf53be855bc12b920",
+                    "url": "https://download.kde.org/stable/frameworks/5.106/portingAids/khtml-5.106.0.tar.xz",
+                    "sha256": "2225870e1e77aab9574d8b959e13e13edf18cebed74e6ac67b21e458e94b8d86",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8762,
