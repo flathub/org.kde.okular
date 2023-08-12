@@ -476,8 +476,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/23.04.3/src/okular-23.04.3.tar.xz",
-                    "sha256": "71815773b282aa12160a504065f2343b161036c6ad2ef52138a2fd6af0c4eced",
+                    "url": "https://download.kde.org/unstable/release-service/23.07.90/src/okular-23.07.90.tar.xz",
+                    "sha256": "e1ae66c6438d38be166111a265df3e9d8d366a4c01e99a9d29471a9b4fcdec84",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 368663,
