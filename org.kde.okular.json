@@ -480,9 +480,9 @@
                     "sha256": "71815773b282aa12160a504065f2343b161036c6ad2ef52138a2fd6af0c4eced",
                     "x-checker-data": {
                         "type": "anitya",
-                        "project-id": 8763,
+                        "project-id": 368663,
                         "stable-only": true,
-                        "url-template": "https://download.kde.org/stable/release-service/$version/src/okular-$version.tar.xz"
+                        "url-template": "https://download.kde.org/unstable/release-service/$version/src/okular-$version.tar.xz"
                     }
                 },
                 {
