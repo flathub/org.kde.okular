@@ -13,7 +13,12 @@
         "--socket=fallback-x11",
         "--socket=wayland",
         "--device=dri",
-        "--filesystem=host"
+        "--filesystem=home",
+        "--filesystem=/media",
+        "--filesystem=/mnt",
+        "--filesystem=/run/media",
+        "--filesystem=/var/run/media",
+        "--filesystem=/var/mnt",
     ],
     "cleanup": [
         "/include",
