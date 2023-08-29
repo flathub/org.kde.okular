@@ -19,6 +19,7 @@
         "--filesystem=/run/media",
         "--filesystem=/var/run/media",
         "--filesystem=/var/mnt",
+        "--filesystem=host:ro",
     ],
     "cleanup": [
         "/include",
