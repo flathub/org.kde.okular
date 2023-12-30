@@ -21,7 +21,7 @@
         "/lib/*.a",
         "/lib/*.la",
         "/lib/cmake",
-        "/share/man"
+        "/share/man",
         "/share/doc",
         "/share/pkgconfig",
         "/share/cmake"
