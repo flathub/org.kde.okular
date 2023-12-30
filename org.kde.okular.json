@@ -470,27 +470,6 @@
             ]
         },
         {
-            "name": "cups",
-            "buildsystem": "simple",
-            "build-commands": [
-                "./configure --disable-systemd --enable-threads --enable-gnutls",
-                "gcc berkeley/lpr.c -o /app/bin/lpr -I . -lcups"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/OpenPrinting/cups/releases/download/v2.4.7/cups-2.4.7-source.tar.gz",
-                    "sha256": "dd54228dd903526428ce7e37961afaed230ad310788141da75cebaa08362cf6c",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 380,
-                        "stable-only": true,
-                        "url-template": "https://github.com/OpenPrinting/cups/releases/download/v$version/cups-$version-source.tar.gz"
-                    }
-                }
-            ]
-        },
-        {
             "name": "okular",
             "buildsystem": "cmake-ninja",
             "builddir": true,
