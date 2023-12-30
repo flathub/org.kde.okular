@@ -63,6 +63,10 @@
                         "stable-only": true,
                         "url-template": "https://github.com/gnustep/libs-base/releases/download/base-$version/gnustep-base-1.$patch.0.tar.gz"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "gnustep-libxml211-fix.patch"
                 }
             ]
         },
