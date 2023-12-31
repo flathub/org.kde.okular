@@ -1,7 +1,7 @@
 {
     "id": "org.kde.okular",
     "runtime": "org.kde.Platform",
-    "runtime-version": "5.15-22.08",
+    "runtime-version": "5.15-23.08",
     "sdk": "org.kde.Sdk",
     "command": "okular",
     "rename-icon": "okular",
@@ -20,7 +20,11 @@
         "/lib/pkgconfig",
         "/lib/*.a",
         "/lib/*.la",
-        "/share/man"
+        "/lib/cmake",
+        "/share/man",
+        "/share/doc",
+        "/share/pkgconfig",
+        "/share/cmake"
     ],
     "modules": [
         {
@@ -63,6 +67,10 @@
                         "stable-only": true,
                         "url-template": "https://github.com/gnustep/libs-base/releases/download/base-$version/gnustep-base-1.$patch.0.tar.gz"
                     }
+                },
+                {
+                    "type": "patch",
+                    "path": "gnustep-libxml211-fix.patch"
                 }
             ]
         },
@@ -221,6 +229,9 @@
             ],
             "make-install-args": [
                 "soinstall"
+            ],
+            "post-install": [
+                "mv -f ${FLATPAK_DEST}/bin/{gsc,gs} "
             ],
             "cleanup": [
                 "/share/ghostscript/*/doc/",
@@ -386,6 +397,19 @@
             ]
         },
         {
+            "name": "pcre",
+            "config-opts": [
+                "--enable-unicode-properties"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "http://prdownloads.sourceforge.net/pcre/pcre-8.45.tar.bz2",
+                    "sha256": "4dae6fdcd2bb0bb6c37b5f97c33c2be954da743985369cddac3546e3218bffb8"
+                }
+            ]
+        },
+        {
             "name": "kjs",
             "buildsystem": "cmake-ninja",
             "builddir": true,
@@ -465,27 +489,6 @@
                         "project-id": 8763,
                         "stable-only": true,
                         "url-template": "https://download.kde.org/stable/release-service/$version/src/kdegraphics-mobipocket-$version.tar.xz"
-                    }
-                }
-            ]
-        },
-        {
-            "name": "cups",
-            "buildsystem": "simple",
-            "build-commands": [
-                "./configure --disable-systemd --enable-threads --enable-gnutls",
-                "gcc berkeley/lpr.c -o /app/bin/lpr -I . -lcups"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/OpenPrinting/cups/releases/download/v2.4.7/cups-2.4.7-source.tar.gz",
-                    "sha256": "dd54228dd903526428ce7e37961afaed230ad310788141da75cebaa08362cf6c",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 380,
-                        "stable-only": true,
-                        "url-template": "https://github.com/OpenPrinting/cups/releases/download/v$version/cups-$version-source.tar.gz"
                     }
                 }
             ]
