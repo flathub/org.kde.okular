@@ -522,6 +522,10 @@
                     "path": "okular-mimetypes.patch"
                 },
                 {
+                    "type": "patch",
+                    "path": "0001-org.kde.okular.appdata-Add-developer_name.patch"
+                },
+                {
                     "type": "script",
                     "dest-filename": "okular-wrapper",
                     "commands": [

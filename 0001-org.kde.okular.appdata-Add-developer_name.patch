@@ -1,0 +1,39 @@
+From 7c6b5fb2fc6063fb9e6f0d1274c696e1e6c68740 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Timoth=C3=A9e=20Ravier?= <tim@siosm.fr>
+Date: Tue, 6 Feb 2024 14:03:06 +0100
+Subject: [PATCH] org.kde.okular.appdata: Add developer_name
+
+Fixes the following lint errors for Flathub:
+```
+{
+    "errors": [
+        "appstream-missing-developer-name"
+    ]
+}
+```
+
+See:
+- https://github.com/flathub/org.kde.kdenlive/pull/329
+- https://github.com/flathub-infra/flatpak-builder-lint/issues/274
+- https://freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-developer
+- https://freedesktop.org/software/appstream/docs/chap-Metadata.html#tag-developer_name
+- https://mail.kde.org/pipermail/kde-devel/2024-February/002400.html
+---
+ shell/org.kde.okular.appdata.xml | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/shell/org.kde.okular.appdata.xml b/shell/org.kde.okular.appdata.xml
+index 1228a1d6f..c8a6c4117 100644
+--- a/shell/org.kde.okular.appdata.xml
++++ b/shell/org.kde.okular.appdata.xml
+@@ -3,6 +3,7 @@
+   <id>org.kde.okular.desktop</id>
+   <metadata_license>CC0-1.0</metadata_license>
+   <project_license>GPL-2.0+ and GFDL-1.3</project_license>
++  <developer_name translate="no">KDE</developer_name>
+   <name>Okular</name>
+   <name xml:lang="ar">اوكلار</name>
+   <name xml:lang="az">Okular</name>
+-- 
+2.43.0
+
