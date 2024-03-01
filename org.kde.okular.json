@@ -410,48 +410,6 @@
             ]
         },
         {
-            "name": "kjs",
-            "buildsystem": "cmake-ninja",
-            "builddir": true,
-            "config-opts": [
-                "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.kde.org/stable/frameworks/5.115/portingAids/kjs-5.115.0.tar.xz",
-                    "sha256": "9cf4e00070586af43a21d5e4c30c61e66bc1c5f53952d4335bc7df44f9130432",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 8762,
-                        "stable-only": true,
-                        "url-template": "https://download.kde.org/stable/frameworks/$major.$minor/portingAids/kjs-$version.tar.xz"
-                    }
-                }
-            ]
-        },
-        {
-            "name": "khtml",
-            "buildsystem": "cmake-ninja",
-            "builddir": true,
-            "config-opts": [
-                "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://download.kde.org/stable/frameworks/5.115/portingAids/khtml-5.115.0.tar.xz",
-                    "sha256": "742a9965008d5205e92ece2a574b48f65452b17b8c4ce2176e0c25cc3be8cf60",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 8762,
-                        "stable-only": true,
-                        "url-template": "https://download.kde.org/stable/frameworks/$major.$minor/portingAids/khtml-$version.tar.xz"
-                    }
-                }
-            ]
-        },
-        {
             "name": "libkexiv2",
             "buildsystem": "cmake-ninja",
             "builddir": true,
