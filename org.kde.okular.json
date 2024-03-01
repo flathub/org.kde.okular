@@ -333,11 +333,13 @@
                 "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
                 "-DBUILD_GTK_TESTS=OFF",
                 "-DBUILD_QT5_TESTS=OFF",
+                "-DBUILD_QT6_TESTS=OFF",
                 "-DBUILD_CPP_TESTS=OFF",
                 "-DENABLE_UTILS=OFF",
                 "-DENABLE_CPP=OFF",
                 "-DENABLE_GLIB=OFF",
-                "-DENABLE_QT6=OFF"
+                "-DENABLE_QT5=OFF",
+                "-DENABLE_QT6=ON"
             ],
             "sources": [
                 {
@@ -414,7 +416,8 @@
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "config-opts": [
-                "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+                "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
+                "-DQT_MAJOR_VERSION=6"
             ],
             "sources": [
                 {
@@ -435,7 +438,8 @@
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "config-opts": [
-                "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+                "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
+                "-DQT_MAJOR_VERSION=6"
             ],
             "sources": [
                 {
