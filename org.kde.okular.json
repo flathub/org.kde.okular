@@ -248,18 +248,6 @@
                         "stable-only": true,
                         "url-template": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs${major}0$minor$patch/ghostscript-$version.tar.gz"
                     }
-                },
-                {
-                    "type": "shell",
-                    "commands": [
-                        "cp -p /usr/share/automake-*/config.{sub,guess} freetype/builds/unix/",
-                        "cp -p /usr/share/automake-*/config.{sub,guess} ijs/",
-                        "cp -p /usr/share/automake-*/config.{sub,guess} jpeg/",
-                        "cp -p /usr/share/automake-*/config.{sub,guess} libpng/",
-                        "cp -p /usr/share/automake-*/config.{sub,guess} lcms2mt/",
-                        "cp -p /usr/share/automake-*/config.{sub,guess} tiff/config/",
-                        "rm -rf libpng/pngread.c"
-                    ]
                 }
             ]
         },
