@@ -139,8 +139,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://libzip.org/download/libzip-1.10.1.tar.xz",
-                    "sha256": "dc3c8d5b4c8bbd09626864f6bcf93de701540f761d76b85d7c7d710f4bd90318",
+                    "url": "https://libzip.org/download/libzip-1.11.1.tar.xz",
+                    "sha256": "721e0e4e851073b508c243fd75eda04e4c5006158a900441de10ce274cc3b633",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10649,
@@ -236,8 +236,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10031/ghostscript-10.03.1.tar.gz",
-                    "sha256": "31cd01682ad23a801cc3bbc222a55f07c4ea3e068bdfb447792d54db21a2e8ad",
+                    "url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10040/ghostscript-10.04.0.tar.gz",
+                    "sha256": "c764dfbb7b13fc71a7a05c634e014f9bb1fb83b899fe39efc0b6c3522a9998b1",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1157,
