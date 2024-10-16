@@ -1,0 +1,113 @@
+diff --git a/autotests/mainshelltest.cpp b/autotests/mainshelltest.cpp
+index de48b8f..e0e5186 100644
+--- a/autotests/mainshelltest.cpp
++++ b/autotests/mainshelltest.cpp
+@@ -147,9 +147,7 @@ void MainShellTest::initTestCase()
+     // Register in bus as okular
+ #if HAVE_DBUS
+     QDBusConnectionInterface *bus = QDBusConnection::sessionBus().interface();
+-    const QString myPid = QString::number(getpid());
+-    const QString serviceName = QStringLiteral("org.kde.okular-") + myPid;
+-    QVERIFY(bus->registerService(serviceName) == QDBusConnectionInterface::ServiceRegistered);
++    QVERIFY(bus->registerService(ShellUtils::currentProcessDbusName()) == QDBusConnectionInterface::ServiceRegistered);
+ #endif
+     // Tell the presentationWidget and queryClose to not be annoying
+     KSharedConfigPtr c = KSharedConfig::openConfig(QStringLiteral("mainshelltest.kmessagebox"));
+diff --git a/shell/okular_main.cpp b/shell/okular_main.cpp
+index 06186b5..38494a5 100644
+--- a/shell/okular_main.cpp
++++ b/shell/okular_main.cpp
+@@ -100,9 +100,6 @@ static bool attachExistingInstance(const QStringList &paths, const QString &seri
+ 
+     const QStringList services = sessionInterface->registeredServiceNames().value();
+ 
+-    // Don't match the service without trailing "-" (unique instance)
+-    const QString pattern = QStringLiteral("org.kde.okular-");
+-    const QString myPid = QString::number(qApp->applicationPid());
+     QScopedPointer<QDBusInterface> bestService;
+ #if HAVE_X11
+     const int desktop = KX11Extras::currentDesktop();
+@@ -111,8 +108,9 @@ static bool attachExistingInstance(const QStringList &paths, const QString &seri
+ #endif
+ 
+     // Select the first instance that isn't us (metric may change in future)
++    const QString& ownDbus = ShellUtils::currentProcessDbusName();
+     for (const QString &service : services) {
+-        if (service.startsWith(pattern) && !service.endsWith(myPid)) {
++        if (service.startsWith(ShellUtils::kPerProcessDbusPrefix) && service != ownDbus) {
+             bestService.reset(new QDBusInterface(service, QStringLiteral("/okularshell"), QStringLiteral("org.kde.okular")));
+ 
+             // Find a window that can handle our documents
+diff --git a/shell/shell.cpp b/shell/shell.cpp
+index d3c9b53..34f4089 100644
+--- a/shell/shell.cpp
++++ b/shell/shell.cpp
+@@ -289,8 +289,7 @@ Shell::Shell(const QString &serializedOptions)
+                 KMessageBox::information(this, i18n("There is already a unique Okular instance running. This instance won't be the unique one."));
+             }
+         } else {
+-            QString serviceName = QStringLiteral("org.kde.okular-") + QString::number(qApp->applicationPid());
+-            QDBusConnection::sessionBus().registerService(serviceName);
++            QDBusConnection::sessionBus().registerService(ShellUtils::currentProcessDbusName());
+         }
+         if (ShellUtils::noRaise(serializedOptions)) {
+             setAttribute(Qt::WA_ShowWithoutActivating);
+diff --git a/shell/shellutils.cpp b/shell/shellutils.cpp
+index 07b7e00..5898903 100644
+--- a/shell/shellutils.cpp
++++ b/shell/shellutils.cpp
+@@ -14,6 +14,10 @@
+ #include <QFileInfo>
+ #include <QUrl>
+ 
++#if HAVE_DBUS
++#include <QUuid>
++#endif // HAVE_DBUS
++
+ namespace ShellUtils
+ {
+ namespace detail
+@@ -150,4 +154,13 @@ QString editorCmd(const QString &serializedOptions)
+     unserializeOptions(serializedOptions, &dummy, &dummy, &dummy, &dummy, &dummy, &dummyString, &dummyString, &result);
+     return QString::fromUtf8(QByteArray::fromBase64(result.toLatin1()));
+ }
++
++#if HAVE_DBUS
++const QString& currentProcessDbusName()
++{
++    // PID is not unique in sandboxed environments (Flatpak/Snap).
++    static const QString name = kPerProcessDbusPrefix + QUuid::createUuid().toString(QUuid::Id128);
++    return name;
++}
++#endif // HAVE_DBUS
+ }
+diff --git a/shell/shellutils.h b/shell/shellutils.h
+index 0fb7394..40334da 100644
+--- a/shell/shellutils.h
++++ b/shell/shellutils.h
+@@ -7,8 +7,14 @@
+ #ifndef OKULAR_SHELLUTILS_H
+ #define OKULAR_SHELLUTILS_H
+ 
++#include "config-okular.h"
++
+ #include <QString>
+ 
++#if HAVE_DBUS
++#include <QLatin1StringView>
++#endif // HAVE_DBUS
++
+ class QUrl;
+ 
+ class QCommandLineParser;
+@@ -30,6 +36,10 @@ QString page(const QString &serializedOptions);
+ QString find(const QString &serializedOptions);
+ QString editorCmd(const QString &serializedOptions);
+ 
++#if HAVE_DBUS
++inline constexpr QLatin1StringView kPerProcessDbusPrefix("org.kde.okular.Instance_");
++const QString& currentProcessDbusName();
++#endif // HAVE_DBUS
+ }
+ 
+ #endif
