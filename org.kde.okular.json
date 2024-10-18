@@ -444,8 +444,7 @@
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "config-opts": [
-                "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
-                "-DBUILD_OKULARKIRIGAMI=OFF"
+                "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
             ],
             "post-install": [
                 "mv /app/bin/okular /app/bin/okular-bin",
