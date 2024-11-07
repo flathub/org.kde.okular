@@ -381,8 +381,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/24.08.2/src/libkexiv2-24.08.2.tar.xz",
-                    "sha256": "e29246536dc0af28c46708641614ec7f9e2174e0233ead37f33e99aaba098093",
+                    "url": "https://download.kde.org/stable/release-service/24.08.3/src/libkexiv2-24.08.3.tar.xz",
+                    "sha256": "9f3865411afb594ad2da9f2907e5124277f662be3f4c614bd4d5ccc36cfb8906",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
@@ -403,8 +403,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/24.08.2/src/kdegraphics-mobipocket-24.08.2.tar.xz",
-                    "sha256": "56bfddf24ce745513d6df2c295f119de6870981ebccf8d06a1066822ed7f3995",
+                    "url": "https://download.kde.org/stable/release-service/24.08.3/src/kdegraphics-mobipocket-24.08.3.tar.xz",
+                    "sha256": "ee4e959aa6d9753b3e715b98da92251da41621e387fe06531f0a6fad057fa34a",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
@@ -428,8 +428,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/24.08.2/src/okular-24.08.2.tar.xz",
-                    "sha256": "4089c77d5be60aedbd45da0d4ba319e3909b15a640cd51d361b01d95ad33c8fb",
+                    "url": "https://download.kde.org/stable/release-service/24.08.3/src/okular-24.08.3.tar.xz",
+                    "sha256": "b398ab3302edd540c56ddd826f31d83a246e9a53c86a52e033347ab947fedc9b",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
