@@ -390,12 +390,63 @@
             ]
         },
         {
+            "name": "libvlc",
+            "config-opts": [
+                "BUILDCC=gcc",
+                "--disable-lua",
+                "--disable-a52",
+                "--disable-qt",
+                "--disable-ncurses",
+                "--disable-udev"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://get.videolan.org/vlc/3.0.21/vlc-3.0.21.tar.xz",
+                    "sha256": "24dbbe1d7dfaeea0994d5def0bbde200177347136dbfe573f5b6a4cee25afbb0",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 6504,
+                        "stable-only": true,
+                        "url-template": "https://get.videolan.org/vlc/$version/vlc-$version.tar.xz"
+                    }
+                },
+                {
+                    "type": "patch",
+                    "path": "vlc-ignore-time-for-cache.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "vlc-taglib-2.patch"
+                }
+            ]
+        },
+        {
+            "name": "phonon-vlc",
+            "buildsystem": "cmake-ninja",
+            "config-opts": [
+                "-DPHONON_BUILD_QT5=OFF"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://download.kde.org/stable/phonon/phonon-backend-vlc/0.12.0/phonon-backend-vlc-0.12.0.tar.xz",
+                    "sha256": "338479dc451e4b94b3ca5b578def741dcf82f5c626a2807d36235be2dce7c9a5",
+                    "x-checker-data": {
+                        "type": "anitya",
+                        "project-id": 229046,
+                        "stable-only": true,
+                        "url-template": "https://download.kde.org/stable/phonon/phonon-backend-vlc/$version/phonon-backend-vlc-$version.tar.xz"
+                    }
+                }
+            ]
+        },
+        {
             "name": "okular",
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "config-opts": [
-                "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
-                "-DFORCE_NOT_REQUIRED_DEPENDENCIES=Phonon4Qt6"
+                "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
             ],
             "post-install": [
                 "mv /app/bin/okular /app/bin/okular-bin",
