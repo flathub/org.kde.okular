@@ -1,7 +1,7 @@
 {
     "id": "org.kde.okular",
     "runtime": "org.kde.Platform",
-    "runtime-version": "6.7",
+    "runtime-version": "6.8",
     "sdk": "org.kde.Sdk",
     "command": "okular",
     "rename-icon": "okular",
@@ -239,31 +239,6 @@
             ]
         },
         {
-            "name": "openjpeg",
-            "buildsystem": "cmake-ninja",
-            "builddir": true,
-            "config-opts": [
-                "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
-            ],
-            "cleanup": [
-                "/bin",
-                "/lib/openjpeg-*"
-            ],
-            "sources": [
-                {
-                    "type": "archive",
-                    "url": "https://github.com/uclouvain/openjpeg/archive/v2.5.3.tar.gz",
-                    "sha256": "368fe0468228e767433c9ebdea82ad9d801a3ad1e4234421f352c8b06e7aa707",
-                    "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 2550,
-                        "stable-only": true,
-                        "url-template": "https://github.com/uclouvain/openjpeg/archive/v$version.tar.gz"
-                    }
-                }
-            ]
-        },
-        {
             "name": "poppler-data",
             "buildsystem": "cmake-ninja",
             "builddir": true,
@@ -419,7 +394,8 @@
             "buildsystem": "cmake-ninja",
             "builddir": true,
             "config-opts": [
-                "-DCMAKE_BUILD_TYPE=RelWithDebInfo"
+                "-DCMAKE_BUILD_TYPE=RelWithDebInfo",
+                "-DFORCE_NOT_REQUIRED_DEPENDENCIES=Phonon4Qt6"
             ],
             "post-install": [
                 "mv /app/bin/okular /app/bin/okular-bin",
