@@ -62,13 +62,13 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/gnustep/libs-base/releases/download/base-1_31_0/gnustep-base-1.31.0.tar.gz",
-                    "sha256": "d493ed2ba2a32f559f94e2ae5e339c440ae77d481dff1eb0d51eeac4d9127e33",
+                    "url": "https://github.com/gnustep/libs-base/archive/refs/tags/base-1_31_1.tar.gz",
+                    "sha256": "612e4415efc486c9e7017b00b28b0e122dc739d29b8e5d57ce79bf1a86a9862b",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 9105,
                         "stable-only": true,
-                        "url-template": "https://github.com/gnustep/libs-base/releases/download/base-$version/gnustep-base-1.$patch.0.tar.gz"
+                        "url-template": "https://github.com/gnustep/libs-base/archive/refs/tags/base-$version.tar.gz"
                     }
                 }
             ]
