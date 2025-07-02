@@ -76,6 +76,9 @@
         {
             "name": "unarchiver",
             "buildsystem": "simple",
+            "build-options": {
+                "cflags": "-Wno-int-conversion"
+            },
             "build-commands": [
                 "sed -s -i 's#/usr/include/GNUstep#/app/include#g' */Makefile.linux",
                 "make -C XADMaster -j $FLATPAK_BUILDER_N_JOBS -f Makefile.linux",
@@ -94,6 +97,13 @@
                         "stable-only": true,
                         "url-template": "https://github.com/MacPaw/XADMaster/archive/refs/tags/v$version.tar.gz"
                     }
+                },
+                {
+                    "type": "archive",
+                    "url": "https://github.com/MacPaw/universal-detector/archive/refs/tags/1.1.tar.gz",
+                    "sha256": "8e8532111d0163628eb828a60d67b53133afad3f710b1967e69d3b8eee28a811",
+                    "strip-components": 1,
+                    "dest": "UniversalDetector"
                 }
             ]
         },
