@@ -197,8 +197,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://downloads.sourceforge.net/djvu/djvulibre-3.5.28.tar.gz",
-                    "sha256": "fcd009ea7654fde5a83600eb80757bd3a76998e47d13c66b54c8db849f8f2edc",
+                    "url": "http://downloads.sourceforge.net/djvu/djvulibre-3.5.29.tar.gz",
+                    "sha256": "3466388d03aa9d1c0dcb2744fde119db8a14a7a4c5e9d0019b8e17fb0f461006",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10159,
