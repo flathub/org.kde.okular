@@ -198,7 +198,7 @@
                 {
                     "type": "archive",
                     "url": "http://downloads.sourceforge.net/djvu/djvulibre-3.5.29.tar.gz",
-                    "sha256": "3466388d03aa9d1c0dcb2744fde119db8a14a7a4c5e9d0019b8e17fb0f461006",
+                    "sha256": "d3b4b03ae2bdca8516a36ef6eb27b777f0528c9eda26745d9962824a3fdfeccf",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10159,
