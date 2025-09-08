@@ -118,8 +118,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/Orc/discount/archive/v3.0.1.tar.gz",
-                    "sha256": "045fe1b57e44bbc47cecf9611861178449c999fe22921252ae80f0dddd517687",
+                    "url": "https://github.com/Orc/discount/archive/v3.0.1.1.tar.gz",
+                    "sha256": "ba462dcd5fef8bd3b45bc65082dbc42ff6efb6cf20daaaafab616edf74b704cd",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 12139,
