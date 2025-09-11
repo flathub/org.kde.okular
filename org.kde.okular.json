@@ -118,8 +118,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/Orc/discount/archive/v3.0.1.tar.gz",
-                    "sha256": "045fe1b57e44bbc47cecf9611861178449c999fe22921252ae80f0dddd517687",
+                    "url": "https://github.com/Orc/discount/archive/v3.0.1.2.tar.gz",
+                    "sha256": "4ea6cc8782c6508b3051c469ed7a1b6ca20b023c2a0c26ccd9c83bc7e61dfc16",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 12139,
@@ -229,8 +229,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10051/ghostscript-10.05.1.tar.gz",
-                    "sha256": "121861b6d29b2461dec6575c9f3cab665b810bd408d4ec02c86719fa708b0a49",
+                    "url": "https://github.com/ArtifexSoftware/ghostpdl-downloads/releases/download/gs10060/ghostscript-10.06.0.tar.gz",
+                    "sha256": "5bd6da34794928cc7e616f288e32bd0be7f9a5ca2d3c206a0af2c19a4e3a318f",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 1157,
@@ -374,8 +374,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/25.08.0/src/libkexiv2-25.08.0.tar.xz",
-                    "sha256": "9bb4e5858f35d0dba813ade3c0ff6e7fe750b0930d60a7f4609b48c9563d45eb",
+                    "url": "https://download.kde.org/stable/release-service/25.08.1/src/libkexiv2-25.08.1.tar.xz",
+                    "sha256": "950b39d142bdfdcf34c399ec936fb9930eec4b86223d7ee17c10313597746b8a",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
@@ -396,8 +396,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/25.08.0/src/kdegraphics-mobipocket-25.08.0.tar.xz",
-                    "sha256": "d60c4eb4387d63036a8d734f77c5cbb75aea4c9dc8ecdfece46b227c007416fe",
+                    "url": "https://download.kde.org/stable/release-service/25.08.1/src/kdegraphics-mobipocket-25.08.1.tar.xz",
+                    "sha256": "19456126f4d1fd0c19a0a484dc27d5dd86399bc9a144d7ab89eb6479b110c920",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
@@ -517,8 +517,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/25.08.0/src/okular-25.08.0.tar.xz",
-                    "sha256": "8c70c448e8aa8c55c3623024ee1d70930888672a503c40c60af2de702ffe64fc",
+                    "url": "https://download.kde.org/stable/release-service/25.08.1/src/okular-25.08.1.tar.xz",
+                    "sha256": "67be42a1c3cfd8879c371fbe82f501b1a2709ee74dd08cbd2253d48c2763ed08",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
