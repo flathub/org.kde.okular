@@ -477,6 +477,7 @@
                     "url": "https://download.kde.org/stable/release-service/25.12.1/src/okular-25.12.1.tar.xz",
                     "sha256": "989044c64489f0349584e54a3df212984ea3b8b130b8e2df7a285dfa4b16e6eb",
                     "x-checker-data": {
+                        "is-main-source": true,
                         "type": "anitya",
                         "project-id": 8763,
                         "stable-only": true,
