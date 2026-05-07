@@ -191,8 +191,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "http://downloads.sourceforge.net/djvu/djvulibre-3.5.29.tar.gz",
-                    "sha256": "d3b4b03ae2bdca8516a36ef6eb27b777f0528c9eda26745d9962824a3fdfeccf",
+                    "url": "http://downloads.sourceforge.net/djvu/djvulibre-3.5.30.tar.gz",
+                    "sha256": "ee5e457d4cfebe566f94b99e5e3d3cc7f5c79ddb741c2ac2ba2e456f00329644",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 10159,
@@ -291,8 +291,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://poppler.freedesktop.org/poppler-26.04.0.tar.xz",
-                    "sha256": "b0955163114af96bc0106f68cb24daf973a629462453d8b82775f81b0d4e0693",
+                    "url": "https://poppler.freedesktop.org/poppler-26.05.0.tar.xz",
+                    "sha256": "6fef27ff04f37db43054c86bcdff6128c9fb1f6af4ef3c8b369a7e9abd68d0bb",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 3686,
@@ -356,8 +356,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/26.04.0/src/libkexiv2-26.04.0.tar.xz",
-                    "sha256": "be2057aa2b5287d9f64c9c64260f9d125827abaf10fe4b786b39f59de3b2c319",
+                    "url": "https://download.kde.org/stable/release-service/26.04.1/src/libkexiv2-26.04.1.tar.xz",
+                    "sha256": "7827c710db4b63d059a0721b6a2a833663d0c457bf4219eb8dfc1c98b19c93e5",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
@@ -378,8 +378,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/26.04.0/src/kdegraphics-mobipocket-26.04.0.tar.xz",
-                    "sha256": "78b48775544dd4bc2bbec8c13c479eaa1668e50e420e8249b5eafd6f8f7311f9",
+                    "url": "https://download.kde.org/stable/release-service/26.04.1/src/kdegraphics-mobipocket-26.04.1.tar.xz",
+                    "sha256": "de353837314402f4983893226483a88a9026266b53ddf64b07ef234d149ff7bd",
                     "x-checker-data": {
                         "type": "anitya",
                         "project-id": 8763,
@@ -474,8 +474,8 @@
             "sources": [
                 {
                     "type": "archive",
-                    "url": "https://download.kde.org/stable/release-service/26.04.0/src/okular-26.04.0.tar.xz",
-                    "sha256": "030d54cf3971258dcddd503fd9ad66f11aefb804c72bedd2ab5bf8777fb7f1f3",
+                    "url": "https://download.kde.org/stable/release-service/26.04.1/src/okular-26.04.1.tar.xz",
+                    "sha256": "3d87a0d9e9fe62435a913190a0a7edd75bec6a02ce2eda4089046adcffc6bba6",
                     "x-checker-data": {
                         "is-main-source": true,
                         "type": "anitya",
